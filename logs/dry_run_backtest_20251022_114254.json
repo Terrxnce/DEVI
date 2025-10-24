@@ -1,0 +1,1 @@
+{"timestamp": "2025-10-22T11:42:54.831814+00:00", "level": "WARNING", "logger": "core.orchestration.pipeline", "message": "broker_symbol_registration_error", "taskName": null, "error": "BrokerSymbolInfo.__init__() missing 1 required positional argument: 'symbol'"}

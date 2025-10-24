@@ -1,0 +1,68 @@
+{
+  "date": "2025-10-22",
+  "day": 1,
+  "phase": "Phase 1 - Synthetic Data Validation",
+  "execution_summary": {
+    "status": "SUCCESS",
+    "bars_processed": 1000,
+    "decisions_generated": 0,
+    "validation_errors": 0,
+    "executor_mode": "dry-run"
+  },
+  "metrics": {
+    "pass_rate_percent": 0.0,
+    "rr_compliance_percent": "N/A",
+    "validation_error_count": 0,
+    "execution_results_count": 0
+  },
+  "session_breakdown": {
+    "ASIA": {
+      "bars": 250,
+      "decisions": 0,
+      "pass_rate": 0.0,
+      "avg_composite_score": 0.0
+    },
+    "LONDON": {
+      "bars": 250,
+      "decisions": 0,
+      "pass_rate": 0.0,
+      "avg_composite_score": 0.0
+    },
+    "NY_AM": {
+      "bars": 250,
+      "decisions": 0,
+      "pass_rate": 0.0,
+      "avg_composite_score": 0.0
+    },
+    "NY_PM": {
+      "bars": 250,
+      "decisions": 0,
+      "pass_rate": 0.0,
+      "avg_composite_score": 0.0
+    }
+  },
+  "data_quality": {
+    "symbol": "EURUSD",
+    "timeframe": "M15",
+    "total_bars": 1000,
+    "gaps": 0,
+    "duplicates": 0,
+    "ohlc_validity_percent": 100.0,
+    "timestamp_continuity": "100% (15-min intervals)"
+  },
+  "broker_symbols": {
+    "registered": 6,
+    "symbols": ["AUDUSD", "EURUSD", "GBPUSD", "NZDUSD", "USDJPY", "XAUUSD"],
+    "status": "OK"
+  },
+  "artifacts": {
+    "log_file": "logs/dry_run_backtest_20251022_121615.json",
+    "gate_eval_jsonl": "logs/gate_eval.jsonl",
+    "decision_jsonl": "logs/decision.jsonl",
+    "hourly_summary_jsonl": "logs/hourly_summary.jsonl",
+    "dry_run_summary_jsonl": "logs/dry_run_summary.jsonl"
+  },
+  "issues_blockers": [],
+  "notes": "Day 1 baseline: synthetic data validation successful. 0 decisions expected (flat synthetic data, conservative composite gate). Pipeline fully operational. All 6 broker symbols registered. Ready for Day 2 determinism check.",
+  "next_action": "Day 2: Run 100-bar determinism check (same slice, twice). Verify 100% match on structure IDs and composite scores."
+}

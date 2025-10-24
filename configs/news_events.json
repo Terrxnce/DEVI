@@ -1,0 +1,57 @@
+{
+  "news_events": [
+    {
+      "event": "NFP (Non-Farm Payrolls)",
+      "currency": "USD",
+      "impact": "high",
+      "schedule": "first_friday_monthly",
+      "time_utc": "12:30",
+      "lockout_before_minutes": 60,
+      "lockout_after_minutes": 30
+    },
+    {
+      "event": "FOMC Interest Rate Decision",
+      "currency": "USD", 
+      "impact": "high",
+      "schedule": "quarterly",
+      "time_utc": "18:00",
+      "lockout_before_minutes": 45,
+      "lockout_after_minutes": 45
+    },
+    {
+      "event": "ECB Interest Rate Decision",
+      "currency": "EUR",
+      "impact": "high", 
+      "schedule": "monthly",
+      "time_utc": "12:45",
+      "lockout_before_minutes": 30,
+      "lockout_after_minutes": 30
+    },
+    {
+      "event": "GDP Release",
+      "currency": "USD",
+      "impact": "medium",
+      "schedule": "quarterly",
+      "time_utc": "12:30",
+      "lockout_before_minutes": 15,
+      "lockout_after_minutes": 15
+    },
+    {
+      "event": "CPI Release",
+      "currency": "USD",
+      "impact": "medium",
+      "schedule": "monthly",
+      "time_utc": "12:30",
+      "lockout_before_minutes": 15,
+      "lockout_after_minutes": 15
+    }
+  ],
+  "general_settings": {
+    "default_lockout_before_minutes": 15,
+    "default_lockout_after_minutes": 15,
+    "enable_weekend_news": false,
+    "enable_holiday_news": false
+  }
+}
+
+

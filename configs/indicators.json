@@ -1,0 +1,47 @@
+{
+  "atr": {
+    "window_size": 2,
+    "smoothing_method": "wilder",
+    "multiplier_for_stops": 2.0
+  },
+  "moving_averages": {
+    "fast_ma": {
+      "window_size": 3,
+      "ma_type": "ema",
+      "price_type": "close"
+    },
+    "slow_ma": {
+      "window_size": 5,
+      "ma_type": "ema", 
+      "price_type": "close"
+    },
+    "trend_ma": {
+      "window_size": 10,
+      "ma_type": "sma",
+      "price_type": "close"
+    }
+  },
+  "volatility": {
+    "window_size": 20,
+    "method": "std",
+    "std_multiplier": 2.0,
+    "annualization_factor": 252
+  },
+  "momentum": {
+    "rsi": {
+      "window_size": 14,
+      "indicator_type": "rsi",
+      "price_type": "close",
+      "smoothing_period": 14
+    },
+    "macd": {
+      "window_size": 26,
+      "indicator_type": "macd",
+      "fast_period": 12,
+      "slow_period": 26,
+      "signal_period": 9
+    }
+  }
+}
+
+

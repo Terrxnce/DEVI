@@ -1,0 +1,17 @@
+{
+  "input_file": "infra\\data\\EURUSD_M15_2025-10-01_to-2025-10-23_UTC.csv.csv",
+  "rows_final": 300,
+  "gaps_detected": 0,
+  "bad_ohlc_rows": 0,
+  "first_timestamp_utc": "2025-10-20T11:15:00+00:00",
+  "last_timestamp_utc": "2025-10-23T14:00:00+00:00",
+  "timeframe_minutes": 15,
+  "columns": [
+    "timestamp_utc",
+    "open",
+    "high",
+    "low",
+    "close"
+  ],
+  "notes": "Cleaned CSV ready for pipeline ingestion."
+}

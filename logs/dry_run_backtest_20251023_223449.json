@@ -1,0 +1,2 @@
+{"timestamp": "2025-10-23T22:34:50.166114+00:00", "level": "INFO", "logger": "core.structure.manager", "message": "Initialized EngulfingDetector", "taskName": null}
+{"timestamp": "2025-10-23T22:34:50.166409+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "MT5Executor initialized in dry-run mode", "taskName": null}

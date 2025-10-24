@@ -1,0 +1,74 @@
+{
+  "scoring_weights": {
+    "structure_quality": 0.4,
+    "proximity_weight": 0.2,
+    "htf_confirmation": 0.15,
+    "volume_confirmation": 0.1,
+    "momentum_alignment": 0.1,
+    "session_context": 0.05
+  },
+  "quality_scoring": {
+    "structure_type_weights": {
+      "ORDER_BLOCK": 1.0,
+      "FAIR_VALUE_GAP": 0.8,
+      "BREAK_OF_STRUCTURE": 0.9,
+      "SWEEP": 0.7
+    },
+    "quality_level_weights": {
+      "PREMIUM": 1.0,
+      "HIGH": 0.8,
+      "MEDIUM": 0.6,
+      "LOW": 0.4
+    }
+  },
+  "addon_scoring": {
+    "enabled": true,
+    "max_addon_score": 0.3,
+    "factors": {
+      "market_session": {
+        "weight": 0.1,
+        "session_scores": {
+          "LONDON": 1.0,
+          "NY_AM": 0.9,
+          "NY_PM": 0.7,
+          "ASIA": 0.6
+        }
+      },
+      "symbol_liquidity": {
+        "weight": 0.05,
+        "major_pairs": 1.0,
+        "minor_pairs": 0.8,
+        "exotic_pairs": 0.6
+      },
+      "time_of_day": {
+        "weight": 0.05,
+        "peak_hours": 1.0,
+        "normal_hours": 0.8,
+        "off_hours": 0.6
+      },
+      "volatility_regime": {
+        "weight": 0.1,
+        "normal_volatility": 1.0,
+        "low_volatility": 0.7,
+        "high_volatility": 0.8,
+        "extreme_volatility": 0.5
+      }
+    }
+  },
+  "thresholds": {
+    "min_core_score": 0.3,
+    "min_total_score": 0.5,
+    "premium_threshold": 0.8,
+    "high_threshold": 0.6,
+    "medium_threshold": 0.4,
+    "low_threshold": 0.2
+  },
+  "max_structures": {
+    "order_blocks": 5,
+    "fair_value_gaps": 5,
+    "break_of_structures": 3,
+    "sweeps": 3
+  }
+}
+
+

@@ -1,0 +1,145 @@
+{
+  "synthetic_overrides": {
+    "threshold_scale": 0.3,
+    "min_body_atr_floor": 0.05,
+    "min_gap_atr_floor": 0.01
+  },
+  "structure_configs": {
+    "order_block": {
+      "displacement_min_body_atr": 0.50,
+      "excess_beyond_swing_atr": 0.10,
+      "max_age_bars": 180,
+      "max_concurrent_zones_per_side": 3,
+      "mid_band_atr": 0.15,
+      "quality_weights": {
+        "body_dominance": 0.35,
+        "displacement_body_atr": 0.35,
+        "break_excess_atr": 0.20,
+        "wick_cleanliness": 0.10
+      }
+    },
+    "fair_value_gap": {
+      "min_gap_size": 0.0005,
+      "max_gap_size": 0.02,
+      "min_volume_ratio": 1.0,
+      "min_gap_atr_multiplier": 0.03,
+      "max_age_bars": 150,
+      "max_concurrent_zones_per_side": 3,
+      "quality_thresholds": {
+        "premium": 0.8,
+        "high": 0.6,
+        "medium": 0.4,
+        "low": 0.2
+      }
+    },
+    "break_of_structure": {
+      "min_break_strength": 0.0015,
+      "pivot_window": 4,
+      "confirmation_periods": 1,
+      "debounce_bars": 2,
+      "volume_confirmation": false
+    },
+    "sweep": {
+      "sweep_excess_atr": 0.08,
+      "close_back_inside_within": 2,
+      "min_follow_through_atr": 0.15,
+      "follow_through_window": 5,
+      "sweep_debounce_bars": 6,
+      "max_age_bars": 100,
+      "quality_weights": {
+        "penetration_atr": 0.4,
+        "rejection_body_atr": 0.3,
+        "follow_through_atr": 0.2,
+        "context_bonus": 0.1
+      },
+      "context_bonus": {
+        "at_zone_boundary": 0.05,
+        "ema_aligned": 0.05
+      }
+    },
+    "unified_zone_rejection": {
+      "touch_atr_buffer": 0.20,
+      "midline_bias": 0.10,
+      "min_reaction_body_atr": 0.35,
+      "min_follow_through_atr": 0.50,
+      "lookahead_bars": 6,
+      "max_age_bars": 20,
+      "debounce_bars": 2,
+      "weights": {
+        "reaction_body": 0.35,
+        "follow_through": 0.35,
+        "penetration_depth": 0.20,
+        "context_bonus": 0.10
+      },
+      "context": {
+        "ema_slope_min": 0.001,
+        "ema_align": 0.05,
+        "bos_align_bonus": 0.05
+      }
+    },
+    "engulfing": {
+      "enabled": true,
+      "atr_window": 14,
+      "min_body_atr": 0.40,
+      "min_body_to_range": 0.50,
+      "min_close_shift_atr": 0.0,
+      "ema_confirm": true,
+      "ema_slope_min": 0.0,
+      "ema_pairs": [21, 50, 200],
+      "zone_context": true,
+      "zone_touch_required": false,
+      "max_zone_distance_atr": 0.7,
+      "pad_band_with_atr": true,
+      "zone_padding_atr": 0.10,
+      "bos_align": true,
+      "lookahead_bars": 5,
+      "follow_through_atr": 0.60,
+      "debounce_bars": 2,
+      "weights": {
+        "body": 0.35,
+        "body_to_range": 0.25,
+        "follow_through": 0.25,
+        "context": 0.15
+      },
+      "quality_thresholds": {
+        "premium": 0.8,
+        "high": 0.65,
+        "medium": 0.45,
+        "low": 0.25
+      }
+    }
+  },
+  "quality_thresholds": {
+    "premium": 0.8,
+    "high": 0.6,
+    "medium": 0.4,
+    "low": 0.2
+  },
+  "max_structures": {
+    "order_blocks": 5,
+    "fair_value_gaps": 5,
+    "break_of_structures": 3,
+    "sweeps": 3,
+    "rejections": 5,
+    "engulfings": 5
+  },
+  "scoring": {
+    "weights": {
+      "structure_quality": 0.40,
+      "uzr_strength": 0.25,
+      "ema_alignment": 0.20,
+      "zone_proximity": 0.15
+    },
+    "scales": {
+      "M15": {
+        "fx": {
+          "ASIA":   { "min_composite": 0.45, "min_rr": 1.5 },
+          "LONDON": { "min_composite": 0.45, "min_rr": 1.5 },
+          "NY_AM":  { "min_composite": 0.45, "min_rr": 1.5 },
+          "NY_PM":  { "min_composite": 0.45, "min_rr": 1.5 }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,62 @@
+{
+  "sltp_configs": {
+    "stop_loss": {
+      "structure_based": {
+        "enabled": true,
+        "buffer_multiplier": 1.5,
+        "min_buffer_pips": 2,
+        "max_buffer_pips": 10
+      },
+      "atr_based": {
+        "enabled": true,
+        "atr_multiplier": 2.0,
+        "min_atr_periods": 14
+      },
+      "fixed": {
+        "enabled": false,
+        "default_pips": 20
+      }
+    },
+    "take_profit": {
+      "structure_based": {
+        "enabled": true,
+        "target_opposing_structure": true,
+        "min_rr_ratio": 1.5
+      },
+      "risk_reward": {
+        "enabled": true,
+        "default_rr_ratio": 2.0,
+        "min_rr_ratio": 1.5,
+        "max_rr_ratio": 5.0
+      },
+      "atr_based": {
+        "enabled": false,
+        "atr_multiplier": 3.0
+      }
+    },
+    "early_exit": {
+      "structure_invalidation": {
+        "enabled": true,
+        "immediate_exit": true
+      },
+      "time_based": {
+        "enabled": true,
+        "max_hold_minutes": 240,
+        "session_end_exit": true
+      },
+      "profit_protection": {
+        "enabled": true,
+        "breakeven_after_rr": 1.0,
+        "trail_stop_after_rr": 2.0
+      }
+    }
+  },
+  "fallback_configs": {
+    "use_atr_if_no_structure": true,
+    "use_fixed_if_atr_fails": false,
+    "default_stop_pips": 15,
+    "default_tp_pips": 30
+  }
+}
+
+

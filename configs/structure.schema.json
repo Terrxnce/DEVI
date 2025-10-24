@@ -1,0 +1,186 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Structure Config Schema",
+  "type": "object",
+  "properties": {
+    "structure_configs": {
+      "type": "object",
+      "properties": {
+        "fair_value_gap": {
+          "type": "object",
+          "properties": {
+            "min_gap_size": {"type": "number", "minimum": 0},
+            "max_gap_size": {"type": "number", "exclusiveMinimum": 0},
+            "min_volume_ratio": {"type": "number", "minimum": 0},
+            "min_gap_atr_multiplier": {"type": "number", "minimum": 0},
+            "max_age_bars": {"type": "integer", "minimum": 1},
+            "max_concurrent_zones_per_side": {"type": "integer", "minimum": 1},
+            "quality_thresholds": {
+              "type": "object",
+              "properties": {
+                "premium": {"type": "number", "minimum": 0, "maximum": 1},
+                "high": {"type": "number", "minimum": 0, "maximum": 1},
+                "medium": {"type": "number", "minimum": 0, "maximum": 1},
+                "low": {"type": "number", "minimum": 0, "maximum": 1}
+              },
+              "required": ["premium", "high", "medium", "low"],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "min_gap_size",
+            "max_gap_size",
+            "min_volume_ratio",
+            "min_gap_atr_multiplier",
+            "max_age_bars",
+            "max_concurrent_zones_per_side",
+            "quality_thresholds"
+          ],
+          "additionalProperties": true
+        },
+        "break_of_structure": {
+          "type": "object",
+          "properties": {
+            "min_break_strength": {"type": "number", "minimum": 0},
+            "pivot_window": {"type": "integer", "minimum": 1},
+            "confirmation_periods": {"type": "integer", "minimum": 1},
+            "debounce_bars": {"type": "integer", "minimum": 1},
+            "volume_confirmation": {"type": "boolean"}
+          },
+          "required": [
+            "min_break_strength",
+            "pivot_window",
+            "confirmation_periods",
+            "debounce_bars",
+            "volume_confirmation"
+          ],
+          "additionalProperties": true
+        },
+        "order_block": {
+          "type": "object",
+          "properties": {
+            "displacement_min_body_atr": {"type": "number", "minimum": 0},
+            "excess_beyond_swing_atr": {"type": "number", "minimum": 0},
+            "max_age_bars": {"type": "integer", "minimum": 1},
+            "max_concurrent_zones_per_side": {"type": "integer", "minimum": 1},
+            "mid_band_atr": {"type": "number", "minimum": 0},
+            "quality_weights": {
+              "type": "object",
+              "properties": {
+                "body_dominance": {"type": "number", "minimum": 0, "maximum": 1},
+                "displacement_body_atr": {"type": "number", "minimum": 0, "maximum": 1},
+                "break_excess_atr": {"type": "number", "minimum": 0, "maximum": 1},
+                "wick_cleanliness": {"type": "number", "minimum": 0, "maximum": 1}
+              },
+              "required": ["body_dominance", "displacement_body_atr", "break_excess_atr", "wick_cleanliness"],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "displacement_min_body_atr",
+            "excess_beyond_swing_atr",
+            "max_age_bars",
+            "max_concurrent_zones_per_side",
+            "mid_band_atr",
+            "quality_weights"
+          ],
+          "additionalProperties": true
+        }
+        ,
+        "sweep": {
+          "type": "object",
+          "properties": {
+            "sweep_excess_atr": {"type": "number", "minimum": 0},
+            "close_back_inside_within": {"type": "integer", "minimum": 1},
+            "min_follow_through_atr": {"type": "number", "minimum": 0},
+            "follow_through_window": {"type": "integer", "minimum": 1},
+            "sweep_debounce_bars": {"type": "integer", "minimum": 1},
+            "max_age_bars": {"type": "integer", "minimum": 1},
+            "quality_weights": {
+              "type": "object",
+              "properties": {
+                "penetration_atr": {"type": "number", "minimum": 0, "maximum": 1},
+                "rejection_body_atr": {"type": "number", "minimum": 0, "maximum": 1},
+                "follow_through_atr": {"type": "number", "minimum": 0, "maximum": 1},
+                "context_bonus": {"type": "number", "minimum": 0, "maximum": 1}
+              },
+              "required": ["penetration_atr", "rejection_body_atr", "follow_through_atr", "context_bonus"],
+              "additionalProperties": false
+            },
+            "context_bonus": {
+              "type": "object",
+              "properties": {
+                "at_zone_boundary": {"type": "number", "minimum": 0},
+                "ema_aligned": {"type": "number", "minimum": 0}
+              },
+              "required": ["at_zone_boundary", "ema_aligned"],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "sweep_excess_atr",
+            "close_back_inside_within",
+            "min_follow_through_atr",
+            "follow_through_window",
+            "sweep_debounce_bars",
+            "max_age_bars",
+            "quality_weights",
+            "context_bonus"
+          ],
+          "additionalProperties": true
+        },
+        "unified_zone_rejection": {
+          "type": "object",
+          "properties": {
+            "touch_atr_buffer": {"type": "number", "minimum": 0},
+            "midline_bias": {"type": "number", "minimum": 0},
+            "min_reaction_body_atr": {"type": "number", "minimum": 0},
+            "min_follow_through_atr": {"type": "number", "minimum": 0},
+            "lookahead_bars": {"type": "integer", "minimum": 1},
+            "max_age_bars": {"type": "integer", "minimum": 1},
+            "debounce_bars": {"type": "integer", "minimum": 1},
+            "weights": {
+              "type": "object",
+              "properties": {
+                "reaction_body": {"type": "number", "minimum": 0, "maximum": 1},
+                "follow_through": {"type": "number", "minimum": 0, "maximum": 1},
+                "penetration_depth": {"type": "number", "minimum": 0, "maximum": 1},
+                "context_bonus": {"type": "number", "minimum": 0, "maximum": 1}
+              },
+              "required": ["reaction_body", "follow_through", "penetration_depth", "context_bonus"],
+              "additionalProperties": false
+            },
+            "context": {
+              "type": "object",
+              "properties": {
+                "ema_slope_min": {"type": "number", "minimum": 0},
+                "ema_align": {"type": "number", "minimum": 0},
+                "bos_align_bonus": {"type": "number", "minimum": 0}
+              },
+              "required": ["ema_slope_min", "ema_align", "bos_align_bonus"],
+              "additionalProperties": false
+            }
+          },
+          "required": [
+            "touch_atr_buffer",
+            "midline_bias",
+            "min_reaction_body_atr",
+            "min_follow_through_atr",
+            "lookahead_bars",
+            "max_age_bars",
+            "debounce_bars",
+            "weights",
+            "context"
+          ],
+          "additionalProperties": true
+        }
+      },
+      "required": ["fair_value_gap", "break_of_structure", "order_block", "sweep", "unified_zone_rejection"],
+      "additionalProperties": true
+    }
+  },
+  "required": ["structure_configs"],
+  "additionalProperties": true
+}
+
+

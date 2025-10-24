@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-10-23T20:48:24.106771+00:00",
+  "log_file": "logs\\dry_run_backtest_20251023_204720.json",
+  "pipeline_stats": {
+    "total_logs": 1408,
+    "structures_detected": 337,
+    "decisions_generated": 0,
+    "execution_results": 0,
+    "pass_rate": "N/A"
+  },
+  "detector_summary": {
+    "EngulfingDetector": {
+      "seen": 42,
+      "fired": 42
+    }
+  },
+  "rr_analysis": {
+    "count": 0,
+    "avg": "N/A",
+    "min": "N/A",
+    "max": "N/A",
+    "rr_gte_1_5": 0
+  },
+  "validation_errors": {},
+  "structure_types": {
+    "STAGE_4_STRUCTURES": 260,
+    "ENGULFING": 42,
+    "STRUCTURES": 35
+  }
+}

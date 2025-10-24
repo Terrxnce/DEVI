@@ -1,0 +1,190 @@
+{"timestamp": "2025-10-22T14:20:09.396017+00:00", "level": "INFO", "logger": "core.orchestration.pipeline", "message": "Registered broker symbols: ['AUDUSD', 'EURUSD', 'GBPUSD', 'NZDUSD', 'USDJPY', 'XAUUSD']", "taskName": null}
+{"timestamp": "2025-10-22T14:20:09.396374+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 1, "min_required": 5}
+{"timestamp": "2025-10-22T14:20:09.396480+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.396967+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 2, "min_required": 5}
+{"timestamp": "2025-10-22T14:20:09.397066+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.397151+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 3, "min_required": 5}
+{"timestamp": "2025-10-22T14:20:09.397213+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.397284+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 4, "min_required": 5}
+{"timestamp": "2025-10-22T14:20:09.397341+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.397451+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 5, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.397525+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.397607+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 6, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.397665+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.397738+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 7, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.397822+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.397973+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 8, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.398035+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.398108+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 9, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.398164+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.398237+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 10, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.398292+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.398374+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 11, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.398481+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.398563+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 12, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.398630+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.398704+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 13, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.398761+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.398860+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 14, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.398941+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.399019+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 15, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.399075+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.399146+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 16, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.399201+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.399283+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 17, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.399340+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.399409+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 18, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.399463+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.399533+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 19, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.399587+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.399656+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 20, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.399721+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.399808+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 21, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.399864+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.399983+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 22, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.400046+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.400119+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 23, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.400175+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.400318+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 24, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.400379+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.400455+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 25, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.400512+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.400584+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 26, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.400662+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.400738+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 27, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.400795+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.400868+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 28, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.400922+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.400996+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 29, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.401051+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.401146+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 30, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.401202+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.401275+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 31, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.401329+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.401401+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 32, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.401460+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.401546+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 33, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.401602+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.401674+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 34, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.401729+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.401800+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 35, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.401855+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.401927+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 36, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.401992+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402065+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 37, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.402120+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402191+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 38, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.402246+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402316+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 39, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.402370+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402444+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402509+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402571+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402642+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402706+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402767+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402829+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.402943+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.403012+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.403075+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.403138+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.403200+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_1_session_gate_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.403317+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 52, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.403389+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.403465+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 53, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.403521+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.403595+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 54, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.403649+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.403738+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 55, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.403806+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.403885+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 56, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.403941+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.404017+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 57, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.404073+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.404150+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 58, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.404206+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.404298+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 59, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.404358+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.404440+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 60, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.404499+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.404577+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 61, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.404642+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.404732+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 62, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.404790+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.404869+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 63, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.404925+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.405002+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 64, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.405059+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.405135+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 65, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.405203+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.405281+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 66, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.405341+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.405419+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 67, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.405476+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.405554+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 68, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.405611+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.405700+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 69, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.405757+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.405834+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 70, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.405894+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.405974+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 71, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.406031+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.406119+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 72, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.406177+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.406255+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 73, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.406311+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.406389+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 74, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.406445+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.406523+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 75, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.406592+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.406679+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 76, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.406737+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.406846+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 77, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.406923+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.407019+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 78, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.407079+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.407161+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 79, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.407219+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.407300+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 80, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.407390+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.407521+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 81, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.407589+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.407678+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 82, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.407769+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.407902+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 83, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.408019+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.408213+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 84, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.408283+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.408387+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 85, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.408451+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.408536+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 86, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.408593+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.408687+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 87, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.408745+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.408822+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 88, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.408895+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.408974+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 89, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.409030+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.409109+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 90, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.409165+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.409244+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 91, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.409312+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.409458+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 92, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.409520+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.409601+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 93, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.409657+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.409736+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 94, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.409803+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.409885+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 95, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.409940+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.410018+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 96, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.410073+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.410152+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 97, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.410207+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.410298+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 98, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.410354+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.410432+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 99, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.410487+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.410565+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null, "bars": 100, "atr_value": "None"}
+{"timestamp": "2025-10-22T14:20:09.410620+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null, "symbol": "EURUSD"}
+{"timestamp": "2025-10-22T14:20:09.410735+00:00", "level": "INFO", "logger": "core.orchestration.pipeline", "message": "dry_run_summary", "taskName": null, "total_orders": 0, "passed": 0, "failed": 0, "pass_rate": "0.0%"}

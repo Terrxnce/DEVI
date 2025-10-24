@@ -1,0 +1,3 @@
+"""
+Market structure detection module.
+"""

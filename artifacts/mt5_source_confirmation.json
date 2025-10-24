@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-10-22T12:34:00Z",
+  "phase": "Phase 1 - Pipeline Validation (Synthetic Data)",
+  "mock": true,
+  "source": "synthetic",
+  "mt5_connection": {
+    "broker": "ICMarkets-Demo",
+    "server": "ICMarkets-Demo",
+    "account_type": "demo",
+    "account_number": "SYNTHETIC_001",
+    "connection_status": "simulated",
+    "connection_verified": true,
+    "note": "This is a mock connection for pipeline validation. Real MT5 integration will occur in Phase 1.5."
+  },
+  "data_ingestion": {
+    "source": "synthetic_generator",
+    "symbol": "EURUSD",
+    "timeframe": "M15",
+    "timezone_handling": "all_timestamps_utc_on_generation",
+    "timezone_conversion_logged": true,
+    "all_timestamps_utc": true
+  },
+  "pipeline_validation": {
+    "detection_layer": "active",
+    "decision_layer": "active",
+    "execution_layer": "dry_run_validation",
+    "logging": "jsonl_format"
+  },
+  "notes": "Phase 1 uses synthetic data to validate the complete pipeline (detection → scoring → execution validation). Once determinism is verified and all success criteria are met, Phase 1.5 will integrate the real MT5 broker connection."
+}

@@ -1,0 +1,50 @@
+{
+  "session_configs": {
+    "ASIA": {
+      "symbols": ["EURUSD", "GBPUSD", "USDJPY", "AUDUSD"],
+      "max_positions": 3,
+      "max_risk_per_trade": 0.02,
+      "stop_loss_buffer": 0.0005,
+      "take_profit_multiplier": 2.0,
+      "max_daily_loss": 0.05
+    },
+    "LONDON": {
+      "symbols": ["EURUSD", "GBPUSD", "USDCHF", "EURGBP"],
+      "max_positions": 4,
+      "max_risk_per_trade": 0.025,
+      "stop_loss_buffer": 0.0003,
+      "take_profit_multiplier": 1.8,
+      "max_daily_loss": 0.06
+    },
+    "NY_AM": {
+      "symbols": ["EURUSD", "GBPUSD", "USDCAD", "USDCHF"],
+      "max_positions": 5,
+      "max_risk_per_trade": 0.03,
+      "stop_loss_buffer": 0.0002,
+      "take_profit_multiplier": 1.5,
+      "max_daily_loss": 0.08
+    },
+    "NY_PM": {
+      "symbols": ["EURUSD", "GBPUSD", "AUDUSD", "NZDUSD"],
+      "max_positions": 3,
+      "max_risk_per_trade": 0.02,
+      "stop_loss_buffer": 0.0004,
+      "take_profit_multiplier": 2.2,
+      "max_daily_loss": 0.05
+    }
+  },
+  "session_rotation": {
+    "auto_rotation": true,
+    "transition_buffer_minutes": 5,
+    "force_close_positions": true,
+    "force_close_buffer_minutes": 3
+  },
+  "session_times": {
+    "ASIA": {"start_hour": 0, "end_hour": 8},
+    "LONDON": {"start_hour": 8, "end_hour": 16},
+    "NY_AM": {"start_hour": 13, "end_hour": 17},
+    "NY_PM": {"start_hour": 17, "end_hour": 21}
+  }
+}
+
+

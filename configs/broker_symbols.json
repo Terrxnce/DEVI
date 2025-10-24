@@ -1,0 +1,76 @@
+{
+  "symbols": {
+    "EURUSD": {
+      "bid": 1.0950,
+      "ask": 1.0952,
+      "point": 0.00001,
+      "digits": 5,
+      "volume_min": 0.01,
+      "volume_max": 100.0,
+      "volume_step": 0.01,
+      "min_stop_distance": 50,
+      "max_stop_distance": 5000,
+      "spread": 2.0
+    },
+    "GBPUSD": {
+      "bid": 1.2650,
+      "ask": 1.2652,
+      "point": 0.0001,
+      "digits": 4,
+      "volume_min": 0.01,
+      "volume_max": 100.0,
+      "volume_step": 0.01,
+      "min_stop_distance": 50,
+      "max_stop_distance": 5000,
+      "spread": 2.0
+    },
+    "USDJPY": {
+      "bid": 149.50,
+      "ask": 149.52,
+      "point": 0.01,
+      "digits": 2,
+      "volume_min": 0.01,
+      "volume_max": 100.0,
+      "volume_step": 0.01,
+      "min_stop_distance": 50,
+      "max_stop_distance": 5000,
+      "spread": 2.0
+    },
+    "AUDUSD": {
+      "bid": 0.6750,
+      "ask": 0.6752,
+      "point": 0.0001,
+      "digits": 4,
+      "volume_min": 0.01,
+      "volume_max": 100.0,
+      "volume_step": 0.01,
+      "min_stop_distance": 50,
+      "max_stop_distance": 5000,
+      "spread": 2.0
+    },
+    "NZDUSD": {
+      "bid": 0.6150,
+      "ask": 0.6152,
+      "point": 0.0001,
+      "digits": 4,
+      "volume_min": 0.01,
+      "volume_max": 100.0,
+      "volume_step": 0.01,
+      "min_stop_distance": 50,
+      "max_stop_distance": 5000,
+      "spread": 2.0
+    },
+    "XAUUSD": {
+      "bid": 2050.00,
+      "ask": 2050.50,
+      "point": 0.01,
+      "digits": 2,
+      "volume_min": 0.01,
+      "volume_max": 100.0,
+      "volume_step": 0.01,
+      "min_stop_distance": 50,
+      "max_stop_distance": 5000,
+      "spread": 50.0
+    }
+  }
+}

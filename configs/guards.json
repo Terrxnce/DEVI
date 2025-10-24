@@ -1,0 +1,45 @@
+{
+  "guard_configs": {
+    "spread_atr": {
+      "max_spread_atr_ratio": 0.5,
+      "min_atr_periods": 14,
+      "spread_threshold_pips": 3.0
+    },
+    "risk_reward": {
+      "min_risk_reward_ratio": 1.5,
+      "max_risk_per_trade": 0.02,
+      "max_risk_per_session": 0.08
+    },
+    "hourly_caps": {
+      "max_trades_per_hour": 3,
+      "max_positions_per_hour": 2,
+      "cooling_period_minutes": 15
+    },
+    "drawdown": {
+      "max_drawdown_percent": 5.0,
+      "daily_loss_limit_percent": 3.0,
+      "session_loss_limit_percent": 2.0,
+      "consecutive_loss_limit": 5
+    },
+    "news_lockout": {
+      "enabled": true,
+      "lockout_before_minutes": 30,
+      "lockout_after_minutes": 15,
+      "high_impact_only": true,
+      "news_events_file": "configs/news_events.json"
+    },
+    "session_timing": {
+      "skip_first_minutes": 15,
+      "skip_last_minutes": 15,
+      "force_close_buffer_minutes": 5
+    }
+  },
+  "risk_limits": {
+    "max_daily_loss": 0.05,
+    "max_session_loss": 0.03,
+    "max_position_size": 10000,
+    "max_concurrent_positions": 5
+  }
+}
+
+

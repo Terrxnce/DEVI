@@ -1,0 +1,2 @@
+{"timestamp": "2025-10-21T02:32:43.984760+00:00", "level": "WARNING", "logger": "core.orchestration.pipeline", "message": "broker_symbol_registration_error", "taskName": null, "error": "BrokerSymbolInfo.__init__() missing 1 required positional argument: 'symbol'"}
+{"timestamp": "2025-10-21T02:32:44.063979+00:00", "level": "INFO", "logger": "core.orchestration.pipeline", "message": "dry_run_summary", "taskName": null, "total_orders": 0, "passed": 0, "failed": 0, "pass_rate": "0.0%"}

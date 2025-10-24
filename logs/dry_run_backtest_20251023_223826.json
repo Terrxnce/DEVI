@@ -1,0 +1,890 @@
+{"timestamp": "2025-10-23T22:38:26.844035+00:00", "level": "INFO", "logger": "core.structure.manager", "message": "Initialized EngulfingDetector", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.844338+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "MT5Executor initialized in dry-run mode", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.844490+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 1, "min_required": 5}
+{"timestamp": "2025-10-23T22:38:26.844581+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845070+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 2, "min_required": 5}
+{"timestamp": "2025-10-23T22:38:26.845149+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845221+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 3, "min_required": 5}
+{"timestamp": "2025-10-23T22:38:26.845282+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845345+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 4, "min_required": 5}
+{"timestamp": "2025-10-23T22:38:26.845403+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845466+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845522+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845583+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845636+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845693+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845746+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845804+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845856+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845912+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.845963+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.846019+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.846071+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.846126+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.846177+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.846278+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.846337+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.846395+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.846448+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.846505+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.846557+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.847695+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006690714285714286}
+{"timestamp": "2025-10-23T22:38:26.847845+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.847923+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.848050+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006448571428571429}
+{"timestamp": "2025-10-23T22:38:26.848161+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.848229+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.848338+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006248571428571428}
+{"timestamp": "2025-10-23T22:38:26.848429+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.848488+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.848620+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006330714285714286}
+{"timestamp": "2025-10-23T22:38:26.848769+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.848867+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.848999+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006352142857142857}
+{"timestamp": "2025-10-23T22:38:26.849096+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.849157+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.849252+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006291428571428572}
+{"timestamp": "2025-10-23T22:38:26.849359+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.849482+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.849580+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006205714285714286}
+{"timestamp": "2025-10-23T22:38:26.849669+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.849724+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.849826+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006049285714285715}
+{"timestamp": "2025-10-23T22:38:26.849914+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.849972+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.850059+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005906428571428572}
+{"timestamp": "2025-10-23T22:38:26.850147+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.850215+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.850304+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000571}
+{"timestamp": "2025-10-23T22:38:26.850407+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.850480+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.850571+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005591428571428571}
+{"timestamp": "2025-10-23T22:38:26.850663+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.850719+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.850809+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005627142857142857}
+{"timestamp": "2025-10-23T22:38:26.850900+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.850955+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.851045+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005412857142857143}
+{"timestamp": "2025-10-23T22:38:26.851135+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.851190+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.851279+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005215714285714285}
+{"timestamp": "2025-10-23T22:38:26.851388+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.851449+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.851541+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00048514285714285716}
+{"timestamp": "2025-10-23T22:38:26.851634+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.851689+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.851780+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00048792857142857145}
+{"timestamp": "2025-10-23T22:38:26.851873+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.851928+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.852019+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00046792857142857145}
+{"timestamp": "2025-10-23T22:38:26.852113+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.852168+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.852270+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004582857142857143}
+{"timestamp": "2025-10-23T22:38:26.852359+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.852410+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.852496+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000429}
+{"timestamp": "2025-10-23T22:38:26.852585+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.852636+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.852723+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004265}
+{"timestamp": "2025-10-23T22:38:26.852812+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.852863+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.852950+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000413}
+{"timestamp": "2025-10-23T22:38:26.853040+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.853091+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.853233+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00041507142857142855}
+{"timestamp": "2025-10-23T22:38:26.853351+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.853424+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.853523+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004142857142857143}
+{"timestamp": "2025-10-23T22:38:26.853622+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.853677+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.853774+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003985714285714286}
+{"timestamp": "2025-10-23T22:38:26.853873+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.853929+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.854027+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003957857142857143}
+{"timestamp": "2025-10-23T22:38:26.854127+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.854197+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.854303+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00035257142857142855}
+{"timestamp": "2025-10-23T22:38:26.854412+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.854471+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.854577+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003447857142857143}
+{"timestamp": "2025-10-23T22:38:26.854686+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.854745+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.854851+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00032764285714285713}
+{"timestamp": "2025-10-23T22:38:26.854961+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.855020+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.855128+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030435714285714284}
+{"timestamp": "2025-10-23T22:38:26.855239+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.855301+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.855431+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002794285714285714}
+{"timestamp": "2025-10-23T22:38:26.855544+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.855603+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.855715+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002572857142857143}
+{"timestamp": "2025-10-23T22:38:26.855828+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.855887+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.855999+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00024264285714285715}
+{"timestamp": "2025-10-23T22:38:26.856113+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.856172+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.856294+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002412142857142857}
+{"timestamp": "2025-10-23T22:38:26.856405+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.856461+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.856569+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00023014285714285715}
+{"timestamp": "2025-10-23T22:38:26.856681+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.856737+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.856846+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000219}
+{"timestamp": "2025-10-23T22:38:26.856956+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.857012+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.857122+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00019757142857142857}
+{"timestamp": "2025-10-23T22:38:26.857246+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.857298+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.857414+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00018328571428571428}
+{"timestamp": "2025-10-23T22:38:26.857524+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.857578+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.857681+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00023357142857142858}
+{"timestamp": "2025-10-23T22:38:26.857785+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.857836+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.857939+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00023964285714285713}
+{"timestamp": "2025-10-23T22:38:26.858074+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.858127+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.858232+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00025464285714285714}
+{"timestamp": "2025-10-23T22:38:26.858340+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.858392+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.858496+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002685}
+{"timestamp": "2025-10-23T22:38:26.858602+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.858654+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.858759+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00028314285714285713}
+{"timestamp": "2025-10-23T22:38:26.858867+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.858918+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.859034+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00031464285714285714}
+{"timestamp": "2025-10-23T22:38:26.859143+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.859197+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.859316+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00035035714285714287}
+{"timestamp": "2025-10-23T22:38:26.859429+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.859483+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.859588+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00036892857142857143}
+{"timestamp": "2025-10-23T22:38:26.859692+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.859741+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.859844+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003997142857142857}
+{"timestamp": "2025-10-23T22:38:26.859949+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.859998+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.860102+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004132857142857143}
+{"timestamp": "2025-10-23T22:38:26.860207+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.860256+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.860361+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00045392857142857143}
+{"timestamp": "2025-10-23T22:38:26.860467+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.860516+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.860621+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00046142857142857145}
+{"timestamp": "2025-10-23T22:38:26.860728+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.860778+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.860884+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004713571428571429}
+{"timestamp": "2025-10-23T22:38:26.860991+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.861039+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.861145+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004745714285714286}
+{"timestamp": "2025-10-23T22:38:26.861254+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.861303+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.861419+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000425}
+{"timestamp": "2025-10-23T22:38:26.861573+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.861629+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.861741+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00041564285714285716}
+{"timestamp": "2025-10-23T22:38:26.861854+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.861904+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.862015+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00040707142857142857}
+{"timestamp": "2025-10-23T22:38:26.862128+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.862177+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.862305+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00039564285714285716}
+{"timestamp": "2025-10-23T22:38:26.862421+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.862471+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.862587+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00039564285714285716}
+{"timestamp": "2025-10-23T22:38:26.862703+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.862754+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.862869+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003896428571428571}
+{"timestamp": "2025-10-23T22:38:26.862986+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.863036+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.863153+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003818571428571429}
+{"timestamp": "2025-10-23T22:38:26.863271+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.863321+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.863445+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003922142857142857}
+{"timestamp": "2025-10-23T22:38:26.863566+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.863616+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.863737+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003835714285714286}
+{"timestamp": "2025-10-23T22:38:26.863859+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.863910+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.864029+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003917857142857143}
+{"timestamp": "2025-10-23T22:38:26.864150+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.864216+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.864368+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00038864285714285715}
+{"timestamp": "2025-10-23T22:38:26.864506+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.864560+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.864713+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00039757142857142855}
+{"timestamp": "2025-10-23T22:38:26.864919+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.865024+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.865215+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00042014285714285716}
+{"timestamp": "2025-10-23T22:38:26.865373+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.865448+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.865581+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004455}
+{"timestamp": "2025-10-23T22:38:26.865716+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.865769+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.865899+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005118571428571429}
+{"timestamp": "2025-10-23T22:38:26.866102+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.866199+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.866374+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000572}
+{"timestamp": "2025-10-23T22:38:26.866623+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.866721+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.866881+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006027142857142857}
+{"timestamp": "2025-10-23T22:38:26.867025+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.867084+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.867218+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006362857142857142}
+{"timestamp": "2025-10-23T22:38:26.867353+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.867408+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.867548+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006587857142857143}
+{"timestamp": "2025-10-23T22:38:26.867685+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.867741+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.867873+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006794285714285714}
+{"timestamp": "2025-10-23T22:38:26.868005+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.868059+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.868191+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006961428571428572}
+{"timestamp": "2025-10-23T22:38:26.868346+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.868398+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.868533+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007243571428571429}
+{"timestamp": "2025-10-23T22:38:26.868669+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.868721+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.868849+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007332857142857143}
+{"timestamp": "2025-10-23T22:38:26.868978+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.869028+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.869154+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000734}
+{"timestamp": "2025-10-23T22:38:26.869299+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.869351+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.869475+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007254285714285714}
+{"timestamp": "2025-10-23T22:38:26.869609+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.869660+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.869785+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007272142857142857}
+{"timestamp": "2025-10-23T22:38:26.869910+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.869958+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.870083+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007654285714285714}
+{"timestamp": "2025-10-23T22:38:26.870211+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.870285+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.870419+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007847142857142857}
+{"timestamp": "2025-10-23T22:38:26.870562+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.870616+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.870751+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007575714285714285}
+{"timestamp": "2025-10-23T22:38:26.870886+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.870938+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.871071+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007571428571428572}
+{"timestamp": "2025-10-23T22:38:26.871205+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.871269+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.871406+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007657142857142857}
+{"timestamp": "2025-10-23T22:38:26.871553+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.871613+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.871758+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007742857142857143}
+{"timestamp": "2025-10-23T22:38:26.871899+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.871952+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.872091+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007752857142857142}
+{"timestamp": "2025-10-23T22:38:26.872232+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.872311+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.872460+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007895714285714285}
+{"timestamp": "2025-10-23T22:38:26.872655+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.872719+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.872872+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008224285714285714}
+{"timestamp": "2025-10-23T22:38:26.873025+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.873081+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.873240+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008024285714285714}
+{"timestamp": "2025-10-23T22:38:26.873395+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.873452+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.873614+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008145714285714286}
+{"timestamp": "2025-10-23T22:38:26.873770+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.873827+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.873981+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008452857142857143}
+{"timestamp": "2025-10-23T22:38:26.874135+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.874192+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.874372+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008381428571428572}
+{"timestamp": "2025-10-23T22:38:26.874545+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.874610+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.874770+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008552857142857142}
+{"timestamp": "2025-10-23T22:38:26.874931+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.874990+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.875148+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008392142857142857}
+{"timestamp": "2025-10-23T22:38:26.875309+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.875367+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.875533+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008645714285714285}
+{"timestamp": "2025-10-23T22:38:26.875699+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.875757+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.875919+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008752857142857143}
+{"timestamp": "2025-10-23T22:38:26.876081+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.876139+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.876309+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008517142857142857}
+{"timestamp": "2025-10-23T22:38:26.876473+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.876538+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.876704+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000896}
+{"timestamp": "2025-10-23T22:38:26.876868+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.876927+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.877091+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0009020714285714286}
+{"timestamp": "2025-10-23T22:38:26.877257+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.877315+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.877484+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0009035714285714286}
+{"timestamp": "2025-10-23T22:38:26.877660+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.877722+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.877888+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008917857142857143}
+{"timestamp": "2025-10-23T22:38:26.878055+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.878112+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.878304+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008592857142857142}
+{"timestamp": "2025-10-23T22:38:26.878478+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.878538+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.878709+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008504285714285714}
+{"timestamp": "2025-10-23T22:38:26.878882+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.878941+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.879128+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008700714285714286}
+{"timestamp": "2025-10-23T22:38:26.879306+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.879366+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.879539+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008443571428571429}
+{"timestamp": "2025-10-23T22:38:26.879715+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.879773+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.879945+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008554285714285714}
+{"timestamp": "2025-10-23T22:38:26.880133+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.880196+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.880383+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008418571428571429}
+{"timestamp": "2025-10-23T22:38:26.880562+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.880625+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.880899+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008118571428571428}
+{"timestamp": "2025-10-23T22:38:26.881199+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.881337+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.881637+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007629285714285714}
+{"timestamp": "2025-10-23T22:38:26.881894+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.881978+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.882190+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007186428571428571}
+{"timestamp": "2025-10-23T22:38:26.882388+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.882454+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.882641+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006886428571428572}
+{"timestamp": "2025-10-23T22:38:26.882844+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.882912+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.883101+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006093571428571428}
+{"timestamp": "2025-10-23T22:38:26.883289+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.883352+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.883538+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005768571428571428}
+{"timestamp": "2025-10-23T22:38:26.883724+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.883786+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.883969+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005550714285714285}
+{"timestamp": "2025-10-23T22:38:26.884155+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.884216+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.884400+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005232857142857143}
+{"timestamp": "2025-10-23T22:38:26.884655+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.884727+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.884952+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004872142857142857}
+{"timestamp": "2025-10-23T22:38:26.885148+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.885211+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.885397+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004714285714285714}
+{"timestamp": "2025-10-23T22:38:26.885585+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.885647+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.885835+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004207142857142857}
+{"timestamp": "2025-10-23T22:38:26.886023+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.886084+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.886270+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004239285714285714}
+{"timestamp": "2025-10-23T22:38:26.886458+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.886518+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.886702+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003889285714285714}
+{"timestamp": "2025-10-23T22:38:26.886901+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.886963+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.887151+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003557142857142857}
+{"timestamp": "2025-10-23T22:38:26.887341+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.887401+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.887589+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00035107142857142856}
+{"timestamp": "2025-10-23T22:38:26.887817+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.887888+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.888085+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00033678571428571427}
+{"timestamp": "2025-10-23T22:38:26.888295+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.888358+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.888556+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003360714285714286}
+{"timestamp": "2025-10-23T22:38:26.888755+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.888818+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.889025+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00033142857142857144}
+{"timestamp": "2025-10-23T22:38:26.889229+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.889292+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.889491+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003210714285714286}
+{"timestamp": "2025-10-23T22:38:26.889694+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.889757+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.889955+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00031}
+{"timestamp": "2025-10-23T22:38:26.890156+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.890218+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.890417+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00031714285714285715}
+{"timestamp": "2025-10-23T22:38:26.890620+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.890682+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.890893+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030785714285714287}
+{"timestamp": "2025-10-23T22:38:26.891097+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.891160+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.891363+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002960714285714286}
+{"timestamp": "2025-10-23T22:38:26.891554+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.891614+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.891799+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00028785714285714287}
+{"timestamp": "2025-10-23T22:38:26.891985+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.892042+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.892225+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002775}
+{"timestamp": "2025-10-23T22:38:26.892420+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.892474+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.892654+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00024214285714285714}
+{"timestamp": "2025-10-23T22:38:26.892837+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.892901+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.893083+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00024142857142857142}
+{"timestamp": "2025-10-23T22:38:26.893278+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.893332+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.893508+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002507142857142857}
+{"timestamp": "2025-10-23T22:38:26.893705+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector EngulfingDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.893791+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.893845+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.894026+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00026785714285714287}
+{"timestamp": "2025-10-23T22:38:26.894221+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.894276+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.894461+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00027214285714285714}
+{"timestamp": "2025-10-23T22:38:26.894646+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.894704+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.894900+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002728571428571429}
+{"timestamp": "2025-10-23T22:38:26.895088+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.895143+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.895334+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002707142857142857}
+{"timestamp": "2025-10-23T22:38:26.895522+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.895577+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.895762+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00029214285714285713}
+{"timestamp": "2025-10-23T22:38:26.895951+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.896005+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.896191+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030785714285714287}
+{"timestamp": "2025-10-23T22:38:26.896379+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.896433+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.896620+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030321428571428573}
+{"timestamp": "2025-10-23T22:38:26.896809+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.896863+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.897061+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030785714285714287}
+{"timestamp": "2025-10-23T22:38:26.897267+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.897323+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.897516+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00033464285714285714}
+{"timestamp": "2025-10-23T22:38:26.897750+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.897820+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.898079+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00033142857142857144}
+{"timestamp": "2025-10-23T22:38:26.898329+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.898399+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.898614+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00034535714285714286}
+{"timestamp": "2025-10-23T22:38:26.898827+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.898900+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.899112+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003585714285714286}
+{"timestamp": "2025-10-23T22:38:26.899322+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.899382+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.899581+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003625}
+{"timestamp": "2025-10-23T22:38:26.899778+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.899835+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.900031+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00036285714285714285}
+{"timestamp": "2025-10-23T22:38:26.900230+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.900300+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.900503+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003410714285714286}
+{"timestamp": "2025-10-23T22:38:26.900706+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.900762+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.900976+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00032892857142857143}
+{"timestamp": "2025-10-23T22:38:26.901183+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.901240+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.901441+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00032857142857142856}
+{"timestamp": "2025-10-23T22:38:26.901646+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.901711+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.901917+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00034}
+{"timestamp": "2025-10-23T22:38:26.902121+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.902178+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.902381+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00031964285714285715}
+{"timestamp": "2025-10-23T22:38:26.902585+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.902641+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.902874+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002982142857142857}
+{"timestamp": "2025-10-23T22:38:26.903093+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.903150+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.903354+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030535714285714286}
+{"timestamp": "2025-10-23T22:38:26.903561+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.903617+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.903822+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030464285714285717}
+{"timestamp": "2025-10-23T22:38:26.904029+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.904085+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.904291+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002935714285714286}
+{"timestamp": "2025-10-23T22:38:26.904499+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.904555+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.904762+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002985714285714286}
+{"timestamp": "2025-10-23T22:38:26.904981+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.905040+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.905251+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003389285714285714}
+{"timestamp": "2025-10-23T22:38:26.905468+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.905529+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.905737+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003717857142857143}
+{"timestamp": "2025-10-23T22:38:26.905948+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.906004+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.906230+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004007142857142857}
+{"timestamp": "2025-10-23T22:38:26.906447+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.906505+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.906721+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00043607142857142857}
+{"timestamp": "2025-10-23T22:38:26.906949+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.907008+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.907225+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004982142857142858}
+{"timestamp": "2025-10-23T22:38:26.907443+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.907501+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.907716+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005364285714285714}
+{"timestamp": "2025-10-23T22:38:26.907935+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.907992+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.908209+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005482142857142857}
+{"timestamp": "2025-10-23T22:38:26.908429+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.908486+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.908705+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005607142857142857}
+{"timestamp": "2025-10-23T22:38:26.908934+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.908994+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.909219+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006135714285714286}
+{"timestamp": "2025-10-23T22:38:26.909444+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.909503+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.909724+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006671428571428571}
+{"timestamp": "2025-10-23T22:38:26.909948+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.910005+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.910243+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006692857142857143}
+{"timestamp": "2025-10-23T22:38:26.910474+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.910533+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.910762+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007128571428571429}
+{"timestamp": "2025-10-23T22:38:26.911002+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.911064+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.911304+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007282142857142857}
+{"timestamp": "2025-10-23T22:38:26.911530+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.911587+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.911809+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000755}
+{"timestamp": "2025-10-23T22:38:26.912034+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.912092+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.912325+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007129285714285714}
+{"timestamp": "2025-10-23T22:38:26.912580+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.912641+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.912872+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006829285714285714}
+{"timestamp": "2025-10-23T22:38:26.913114+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.913180+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.913412+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006875714285714286}
+{"timestamp": "2025-10-23T22:38:26.913643+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.913701+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.913929+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006847142857142857}
+{"timestamp": "2025-10-23T22:38:26.914159+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.914217+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.914575+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006250714285714286}
+{"timestamp": "2025-10-23T22:38:26.914978+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.915074+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.915368+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006011428571428572}
+{"timestamp": "2025-10-23T22:38:26.915646+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.915718+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.915969+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005986428571428572}
+{"timestamp": "2025-10-23T22:38:26.916243+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.916305+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.916538+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005875714285714286}
+{"timestamp": "2025-10-23T22:38:26.916768+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.916825+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.917051+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005622142857142857}
+{"timestamp": "2025-10-23T22:38:26.917286+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.917340+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.917559+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005322142857142857}
+{"timestamp": "2025-10-23T22:38:26.917776+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.917830+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.918071+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005515}
+{"timestamp": "2025-10-23T22:38:26.918308+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.918361+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.918562+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005632857142857143}
+{"timestamp": "2025-10-23T22:38:26.918765+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.918815+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.919016+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005797142857142857}
+{"timestamp": "2025-10-23T22:38:26.919216+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.919276+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.919464+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006122142857142857}
+{"timestamp": "2025-10-23T22:38:26.919655+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.919701+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.919908+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006285714285714285}
+{"timestamp": "2025-10-23T22:38:26.920111+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.920157+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.920390+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006653571428571429}
+{"timestamp": "2025-10-23T22:38:26.920600+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.920652+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.920862+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006714285714285714}
+{"timestamp": "2025-10-23T22:38:26.921071+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.921128+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.921355+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00065}
+{"timestamp": "2025-10-23T22:38:26.921570+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.921623+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.921839+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006767857142857143}
+{"timestamp": "2025-10-23T22:38:26.922059+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.922112+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.922345+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007239285714285714}
+{"timestamp": "2025-10-23T22:38:26.922568+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.922620+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.922838+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007314285714285715}
+{"timestamp": "2025-10-23T22:38:26.923056+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.923108+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.923344+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007857142857142857}
+{"timestamp": "2025-10-23T22:38:26.923575+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.923629+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.923858+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007985714285714285}
+{"timestamp": "2025-10-23T22:38:26.924088+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.924143+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.924385+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008139285714285715}
+{"timestamp": "2025-10-23T22:38:26.924619+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.924674+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.924908+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0008107142857142857}
+{"timestamp": "2025-10-23T22:38:26.925146+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.925205+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.925438+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007789285714285715}
+{"timestamp": "2025-10-23T22:38:26.925670+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.925725+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.925957+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007553571428571429}
+{"timestamp": "2025-10-23T22:38:26.926189+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.926266+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.926508+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000695}
+{"timestamp": "2025-10-23T22:38:26.926751+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.926808+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.927051+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0007038571428571429}
+{"timestamp": "2025-10-23T22:38:26.927294+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.927351+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.927593+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006756428571428572}
+{"timestamp": "2025-10-23T22:38:26.927835+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.927891+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.928154+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000676}
+{"timestamp": "2025-10-23T22:38:26.928427+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.928484+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.928722+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006777857142857143}
+{"timestamp": "2025-10-23T22:38:26.928960+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.929014+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.929269+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00066}
+{"timestamp": "2025-10-23T22:38:26.929516+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.929573+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.929818+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006035714285714286}
+{"timestamp": "2025-10-23T22:38:26.930065+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.930120+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.930374+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005828571428571429}
+{"timestamp": "2025-10-23T22:38:26.930622+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.930678+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.930925+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000515}
+{"timestamp": "2025-10-23T22:38:26.931197+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.931263+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.931530+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005025}
+{"timestamp": "2025-10-23T22:38:26.931814+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.931891+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.932203+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00047035714285714286}
+{"timestamp": "2025-10-23T22:38:26.932517+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.932593+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.932899+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000445}
+{"timestamp": "2025-10-23T22:38:26.933171+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.933233+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.933493+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004292857142857143}
+{"timestamp": "2025-10-23T22:38:26.933745+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.933807+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.934060+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004125}
+{"timestamp": "2025-10-23T22:38:26.934338+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.934397+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.934655+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004125}
+{"timestamp": "2025-10-23T22:38:26.934911+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.934969+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.935239+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00039471428571428573}
+{"timestamp": "2025-10-23T22:38:26.935506+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.935564+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.935826+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00037721428571428574}
+{"timestamp": "2025-10-23T22:38:26.936090+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.936148+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.936422+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003418571428571429}
+{"timestamp": "2025-10-23T22:38:26.936689+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.936748+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.937012+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00032685714285714284}
+{"timestamp": "2025-10-23T22:38:26.937293+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.937354+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.937627+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030857142857142856}
+{"timestamp": "2025-10-23T22:38:26.937901+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.937962+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.938237+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00029714285714285715}
+{"timestamp": "2025-10-23T22:38:26.938535+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.938598+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.938873+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00029107142857142857}
+{"timestamp": "2025-10-23T22:38:26.939147+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.939205+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.939475+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002842857142857143}
+{"timestamp": "2025-10-23T22:38:26.939746+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.939806+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.940075+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002607142857142857}
+{"timestamp": "2025-10-23T22:38:26.940356+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.940416+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.940686+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002535714285714286}
+{"timestamp": "2025-10-23T22:38:26.940956+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.941014+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.941282+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00023071428571428573}
+{"timestamp": "2025-10-23T22:38:26.941552+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.941609+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.941878+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00021535714285714287}
+{"timestamp": "2025-10-23T22:38:26.942148+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.942206+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.942505+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00023}
+{"timestamp": "2025-10-23T22:38:26.942786+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.942846+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.943130+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000225}
+{"timestamp": "2025-10-23T22:38:26.943421+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.943479+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.943752+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002025}
+{"timestamp": "2025-10-23T22:38:26.944027+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.944085+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.944366+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00020142857142857142}
+{"timestamp": "2025-10-23T22:38:26.944641+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.944698+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.944971+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000225}
+{"timestamp": "2025-10-23T22:38:26.945243+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.945300+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.945574+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00024142857142857142}
+{"timestamp": "2025-10-23T22:38:26.945848+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.945906+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.946180+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002442142857142857}
+{"timestamp": "2025-10-23T22:38:26.946493+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.946556+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.946849+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002677857142857143}
+{"timestamp": "2025-10-23T22:38:26.947142+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.947203+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.947498+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000286}
+{"timestamp": "2025-10-23T22:38:26.947851+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.948084+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.948568+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003035}
+{"timestamp": "2025-10-23T22:38:26.948942+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.949027+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.949364+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003017142857142857}
+{"timestamp": "2025-10-23T22:38:26.949679+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.949748+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.950053+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00032814285714285714}
+{"timestamp": "2025-10-23T22:38:26.950367+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.950433+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.950724+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003402857142857143}
+{"timestamp": "2025-10-23T22:38:26.951012+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.951073+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.951358+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003502857142857143}
+{"timestamp": "2025-10-23T22:38:26.951643+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.951703+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.951989+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00033814285714285717}
+{"timestamp": "2025-10-23T22:38:26.952277+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.952349+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.952635+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003377857142857143}
+{"timestamp": "2025-10-23T22:38:26.952921+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.952980+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.953292+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003377857142857143}
+{"timestamp": "2025-10-23T22:38:26.953591+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.953652+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.953946+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00033885714285714286}
+{"timestamp": "2025-10-23T22:38:26.954242+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.954302+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.954609+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030914285714285717}
+{"timestamp": "2025-10-23T22:38:26.954907+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.954967+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.955265+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003062857142857143}
+{"timestamp": "2025-10-23T22:38:26.955566+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.955631+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.956020+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003070714285714286}
+{"timestamp": "2025-10-23T22:38:26.956353+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.956418+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.956723+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002892142857142857}
+{"timestamp": "2025-10-23T22:38:26.957028+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.957090+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.957392+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000276}
+{"timestamp": "2025-10-23T22:38:26.957694+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.957755+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.958057+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00027064285714285715}
+{"timestamp": "2025-10-23T22:38:26.958391+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.958463+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.958780+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00026492857142857145}
+{"timestamp": "2025-10-23T22:38:26.959096+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.959160+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.959478+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002502857142857143}
+{"timestamp": "2025-10-23T22:38:26.959781+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.959842+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.960146+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00024885714285714284}
+{"timestamp": "2025-10-23T22:38:26.960484+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.960547+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.960863+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00026885714285714284}
+{"timestamp": "2025-10-23T22:38:26.961179+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.961243+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.961559+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002892142857142857}
+{"timestamp": "2025-10-23T22:38:26.961874+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.961937+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.962254+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00031135714285714284}
+{"timestamp": "2025-10-23T22:38:26.962611+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.962679+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.962999+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003717142857142857}
+{"timestamp": "2025-10-23T22:38:26.963319+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.963381+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.963699+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003985}
+{"timestamp": "2025-10-23T22:38:26.964020+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.964085+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.964464+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00041678571428571426}
+{"timestamp": "2025-10-23T22:38:26.964826+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.964912+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.965318+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00043607142857142857}
+{"timestamp": "2025-10-23T22:38:26.965868+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.965969+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.966345+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004582142857142857}
+{"timestamp": "2025-10-23T22:38:26.966710+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.966781+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.967111+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004992857142857143}
+{"timestamp": "2025-10-23T22:38:26.967434+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.967499+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.967819+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005282142857142857}
+{"timestamp": "2025-10-23T22:38:26.968136+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.968198+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.968550+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005542857142857143}
+{"timestamp": "2025-10-23T22:38:26.968882+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.968947+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.969288+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005928571428571429}
+{"timestamp": "2025-10-23T22:38:26.969605+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.969666+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.969991+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006103571428571428}
+{"timestamp": "2025-10-23T22:38:26.970332+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.970406+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.970736+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006260714285714285}
+{"timestamp": "2025-10-23T22:38:26.971065+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.971128+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.971457+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006257142857142858}
+{"timestamp": "2025-10-23T22:38:26.971789+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.971853+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.972183+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006218571428571429}
+{"timestamp": "2025-10-23T22:38:26.972528+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.972595+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.972931+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006175714285714286}
+{"timestamp": "2025-10-23T22:38:26.973294+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector EngulfingDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.973399+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.973466+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.973815+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005597142857142857}
+{"timestamp": "2025-10-23T22:38:26.974163+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.974244+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.974617+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005429285714285714}
+{"timestamp": "2025-10-23T22:38:26.974964+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.975033+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.975395+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000534}
+{"timestamp": "2025-10-23T22:38:26.975745+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.975812+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.976159+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005286428571428572}
+{"timestamp": "2025-10-23T22:38:26.976522+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.976587+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.976923+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005161428571428572}
+{"timestamp": "2025-10-23T22:38:26.977260+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.977322+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.977657+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004815}
+{"timestamp": "2025-10-23T22:38:26.977993+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.978056+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.978430+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004872142857142857}
+{"timestamp": "2025-10-23T22:38:26.978773+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.978838+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.979178+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004754285714285714}
+{"timestamp": "2025-10-23T22:38:26.979519+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.979582+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.979920+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00047185714285714284}
+{"timestamp": "2025-10-23T22:38:26.980259+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.980323+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.980672+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00047364285714285716}
+{"timestamp": "2025-10-23T22:38:26.981018+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.981112+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.981526+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005118571428571429}
+{"timestamp": "2025-10-23T22:38:26.981977+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.982080+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.982509+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000519}
+{"timestamp": "2025-10-23T22:38:26.982894+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.982969+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.983337+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005228571428571428}
+{"timestamp": "2025-10-23T22:38:26.983700+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.983768+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.984122+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005246428571428571}
+{"timestamp": "2025-10-23T22:38:26.984487+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.984554+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.984901+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005621428571428572}
+{"timestamp": "2025-10-23T22:38:26.985249+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.985313+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.985664+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005710714285714286}
+{"timestamp": "2025-10-23T22:38:26.986013+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.986076+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-23T22:38:26.986419+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00061}
+{"timestamp": "2025-10-23T22:38:26.986777+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-23T22:38:26.986841+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}

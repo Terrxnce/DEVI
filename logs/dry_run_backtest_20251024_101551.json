@@ -1,0 +1,472 @@
+{"timestamp": "2025-10-24T10:15:52.541234+00:00", "level": "INFO", "logger": "core.structure.detector", "message": "Initialized OrderBlockDetector", "taskName": null, "structure_type": "order_block", "enabled": true}
+{"timestamp": "2025-10-24T10:15:52.541560+00:00", "level": "INFO", "logger": "core.structure.manager", "message": "Initialized OrderBlockDetector", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.541750+00:00", "level": "INFO", "logger": "core.structure.detector", "message": "Initialized FairValueGapDetector", "taskName": null, "structure_type": "fair_value_gap", "enabled": true}
+{"timestamp": "2025-10-24T10:15:52.542301+00:00", "level": "INFO", "logger": "core.structure.manager", "message": "Initialized FairValueGapDetector", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.542408+00:00", "level": "INFO", "logger": "core.structure.detector", "message": "Initialized BreakOfStructureDetector", "taskName": null, "structure_type": "break_of_structure", "enabled": true}
+{"timestamp": "2025-10-24T10:15:52.542485+00:00", "level": "INFO", "logger": "core.structure.manager", "message": "Initialized BreakOfStructureDetector", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.542575+00:00", "level": "INFO", "logger": "core.structure.detector", "message": "Initialized SweepDetector", "taskName": null, "structure_type": "sweep", "enabled": true}
+{"timestamp": "2025-10-24T10:15:52.542644+00:00", "level": "INFO", "logger": "core.structure.manager", "message": "Initialized SweepDetector", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.542732+00:00", "level": "INFO", "logger": "core.structure.detector", "message": "Initialized UnifiedZoneRejectionDetector", "taskName": null, "structure_type": "rejection", "enabled": true}
+{"timestamp": "2025-10-24T10:15:52.542801+00:00", "level": "INFO", "logger": "core.structure.manager", "message": "Initialized UnifiedZoneRejectionDetector", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.542880+00:00", "level": "INFO", "logger": "core.structure.detector", "message": "Initialized EngulfingDetector", "taskName": null, "structure_type": "engulfing", "enabled": true}
+{"timestamp": "2025-10-24T10:15:52.542956+00:00", "level": "INFO", "logger": "core.structure.manager", "message": "Initialized EngulfingDetector", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543034+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "MT5Executor initialized in dry-run mode", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543133+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 1, "min_required": 5}
+{"timestamp": "2025-10-24T10:15:52.543217+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543284+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 2, "min_required": 5}
+{"timestamp": "2025-10-24T10:15:52.543338+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543394+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 3, "min_required": 5}
+{"timestamp": "2025-10-24T10:15:52.543445+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543499+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "pre_filter_insufficient_bars", "taskName": null, "bars": 4, "min_required": 5}
+{"timestamp": "2025-10-24T10:15:52.543548+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_2_pre_filters_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543602+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543682+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543742+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543790+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543841+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543888+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543939+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.543997+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544047+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544092+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544142+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544187+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544237+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544283+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544333+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544379+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544428+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544474+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544523+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544569+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_3_indicators_failed", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544669+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006756428571428572}
+{"timestamp": "2025-10-24T10:15:52.544793+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.544953+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.545011+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.545090+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000676}
+{"timestamp": "2025-10-24T10:15:52.545292+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.545403+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.545463+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.545545+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006777857142857143}
+{"timestamp": "2025-10-24T10:15:52.545721+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.545778+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.545858+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00066}
+{"timestamp": "2025-10-24T10:15:52.546053+00:00", "level": "DEBUG", "logger": "core.structure.sweep", "message": "sweep_detected", "taskName": null, "direction": "bearish", "quality_score": 0.6}
+{"timestamp": "2025-10-24T10:15:52.546166+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.546263+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 3.2460732984293195, "structure": "sweep"}
+{"timestamp": "2025-10-24T10:15:52.546325+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.546398+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.546515+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006035714285714286}
+{"timestamp": "2025-10-24T10:15:52.546701+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.546757+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.546839+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005828571428571429}
+{"timestamp": "2025-10-24T10:15:52.547023+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.547077+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.547157+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000515}
+{"timestamp": "2025-10-24T10:15:52.547341+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.547395+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.547475+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005025}
+{"timestamp": "2025-10-24T10:15:52.547645+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.547767+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.547876+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.547969+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.0126582278481013, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.548035+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.548106+00:00", "level": "WARNING", "logger": "core.execution.mt5_executor", "message": "order_validation_failed", "taskName": null, "error": "RR (1.01) must be >= 1.5", "symbol": "EURUSD"}
+{"timestamp": "2025-10-24T10:15:52.548219+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00047035714285714286}
+{"timestamp": "2025-10-24T10:15:52.548340+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.548492+00:00", "level": "DEBUG", "logger": "core.structure.sweep", "message": "sweep_detected", "taskName": null, "direction": "bullish", "quality_score": 0.6}
+{"timestamp": "2025-10-24T10:15:52.548609+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.548689+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 5.972850678733032, "structure": "sweep"}
+{"timestamp": "2025-10-24T10:15:52.548749+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.548816+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.548923+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000445}
+{"timestamp": "2025-10-24T10:15:52.549130+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.549186+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.549272+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004292857142857143}
+{"timestamp": "2025-10-24T10:15:52.549464+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.549572+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.549628+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.549750+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004125}
+{"timestamp": "2025-10-24T10:15:52.549975+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.550033+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.550141+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004125}
+{"timestamp": "2025-10-24T10:15:52.550268+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.550437+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.550596+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.550693+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.8022747156605425, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.550757+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.550827+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.550974+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00039471428571428573}
+{"timestamp": "2025-10-24T10:15:52.551216+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.551365+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.551432+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.551531+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00037721428571428574}
+{"timestamp": "2025-10-24T10:15:52.551666+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.551872+00:00", "level": "DEBUG", "logger": "core.structure.sweep", "message": "sweep_detected", "taskName": null, "direction": "bearish", "quality_score": 0.6}
+{"timestamp": "2025-10-24T10:15:52.552025+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.552117+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 8.841201716738198, "structure": "sweep"}
+{"timestamp": "2025-10-24T10:15:52.552179+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.552247+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.552378+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003418571428571429}
+{"timestamp": "2025-10-24T10:15:52.552623+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.552679+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.552771+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00032685714285714284}
+{"timestamp": "2025-10-24T10:15:52.552962+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.553124+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.553210+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.8049490538573507, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.553271+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.553339+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.553461+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030857142857142856}
+{"timestamp": "2025-10-24T10:15:52.553707+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.553765+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.553859+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00029714285714285715}
+{"timestamp": "2025-10-24T10:15:52.554118+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.554174+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.554267+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00029107142857142857}
+{"timestamp": "2025-10-24T10:15:52.554457+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.554600+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.554721+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.554803+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.7777777777777777, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.554864+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.554935+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.555055+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002842857142857143}
+{"timestamp": "2025-10-24T10:15:52.555193+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.555335+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.555500+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.555580+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.5820543093270365, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.555640+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.555704+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.555840+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002607142857142857}
+{"timestamp": "2025-10-24T10:15:52.556052+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.556174+00:00", "level": "DEBUG", "logger": "core.structure.sweep", "message": "sweep_detected", "taskName": null, "direction": "bullish", "quality_score": 0.6}
+{"timestamp": "2025-10-24T10:15:52.556286+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.556451+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 2}
+{"timestamp": "2025-10-24T10:15:52.556586+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.5252416756176155, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.556673+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.9469026548672566, "structure": "sweep"}
+{"timestamp": "2025-10-24T10:15:52.556806+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 2}
+{"timestamp": "2025-10-24T10:15:52.556898+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.556995+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.557130+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002535714285714286}
+{"timestamp": "2025-10-24T10:15:52.557408+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.557471+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.557576+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00023071428571428573}
+{"timestamp": "2025-10-24T10:15:52.557850+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.557906+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.558015+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00021535714285714287}
+{"timestamp": "2025-10-24T10:15:52.558292+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.558373+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.558475+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00023}
+{"timestamp": "2025-10-24T10:15:52.558687+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.558838+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.558963+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.559050+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.0874704491725768, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.559111+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.559178+00:00", "level": "WARNING", "logger": "core.execution.mt5_executor", "message": "order_validation_failed", "taskName": null, "error": "RR (1.09) must be >= 1.5", "symbol": "EURUSD"}
+{"timestamp": "2025-10-24T10:15:52.559300+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000225}
+{"timestamp": "2025-10-24T10:15:52.559409+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector OrderBlockDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.559528+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.559673+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.559857+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.559939+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.7391304347826086, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.560008+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.560126+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.560256+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002025}
+{"timestamp": "2025-10-24T10:15:52.560547+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.560603+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.560706+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00020142857142857142}
+{"timestamp": "2025-10-24T10:15:52.560916+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.561068+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.561194+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.561276+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.7337461300309598, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.561337+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.561403+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.561525+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000225}
+{"timestamp": "2025-10-24T10:15:52.561672+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.561817+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.561968+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.562099+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.562181+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.0582481102712316, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.562243+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.562308+00:00", "level": "WARNING", "logger": "core.execution.mt5_executor", "message": "order_validation_failed", "taskName": null, "error": "RR (1.06) must be >= 1.5", "symbol": "EURUSD"}
+{"timestamp": "2025-10-24T10:15:52.562434+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00024142857142857142}
+{"timestamp": "2025-10-24T10:15:52.562550+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector OrderBlockDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.562675+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.562820+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.562973+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.563097+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.563178+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.6091954022988506, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.563239+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.563305+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.563429+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002442142857142857}
+{"timestamp": "2025-10-24T10:15:52.563703+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.563828+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.563884+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.563989+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002677857142857143}
+{"timestamp": "2025-10-24T10:15:52.564108+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector OrderBlockDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.564356+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.564482+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.564539+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.564642+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000286}
+{"timestamp": "2025-10-24T10:15:52.564751+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector OrderBlockDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.565004+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.565131+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.565188+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.565291+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003035}
+{"timestamp": "2025-10-24T10:15:52.565402+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector OrderBlockDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.565654+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.565779+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.565836+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.565941+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003017142857142857}
+{"timestamp": "2025-10-24T10:15:52.566213+00:00", "level": "DEBUG", "logger": "core.structure.sweep", "message": "sweep_detected", "taskName": null, "direction": "bullish", "quality_score": 0.6}
+{"timestamp": "2025-10-24T10:15:52.566371+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.566452+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 4.17910447761194, "structure": "sweep"}
+{"timestamp": "2025-10-24T10:15:52.566513+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.566578+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.566717+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00032814285714285714}
+{"timestamp": "2025-10-24T10:15:52.566954+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.567129+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.567300+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.567399+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.6204458945078848, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.567464+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.567543+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.567703+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003402857142857143}
+{"timestamp": "2025-10-24T10:15:52.567884+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.568180+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.568245+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.568363+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003502857142857143}
+{"timestamp": "2025-10-24T10:15:52.568720+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.568784+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.568899+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00033814285714285717}
+{"timestamp": "2025-10-24T10:15:52.569217+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.569360+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.569417+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.569529+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003377857142857143}
+{"timestamp": "2025-10-24T10:15:52.569900+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.569960+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.570087+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003377857142857143}
+{"timestamp": "2025-10-24T10:15:52.570450+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.570511+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.570626+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00033885714285714286}
+{"timestamp": "2025-10-24T10:15:52.570935+00:00", "level": "DEBUG", "logger": "core.structure.sweep", "message": "sweep_detected", "taskName": null, "direction": "bearish", "quality_score": 0.6}
+{"timestamp": "2025-10-24T10:15:52.571110+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.571198+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 2.3927765237020315, "structure": "sweep"}
+{"timestamp": "2025-10-24T10:15:52.571266+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.571339+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.571485+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00030914285714285717}
+{"timestamp": "2025-10-24T10:15:52.571859+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.571917+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.572042+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003062857142857143}
+{"timestamp": "2025-10-24T10:15:52.572223+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.572408+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.572733+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.572977+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.573121+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.023102310231023, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.573226+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.573332+00:00", "level": "WARNING", "logger": "core.execution.mt5_executor", "message": "order_validation_failed", "taskName": null, "error": "RR (1.02) must be >= 1.5", "symbol": "EURUSD"}
+{"timestamp": "2025-10-24T10:15:52.573606+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003070714285714286}
+{"timestamp": "2025-10-24T10:15:52.573894+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.574329+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.574415+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.574554+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002892142857142857}
+{"timestamp": "2025-10-24T10:15:52.574923+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.575077+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.575145+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.575270+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000276}
+{"timestamp": "2025-10-24T10:15:52.575399+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector OrderBlockDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.575540+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.575791+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.575944+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.576005+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.576127+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00027064285714285715}
+{"timestamp": "2025-10-24T10:15:52.576256+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector OrderBlockDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.576396+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.576576+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.576778+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.576917+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.577006+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.4628699050809604, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.577069+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.577137+00:00", "level": "WARNING", "logger": "core.execution.mt5_executor", "message": "order_validation_failed", "taskName": null, "error": "RR (1.46) must be >= 1.5", "symbol": "EURUSD"}
+{"timestamp": "2025-10-24T10:15:52.577279+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00026492857142857145}
+{"timestamp": "2025-10-24T10:15:52.577461+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.577677+00:00", "level": "DEBUG", "logger": "core.structure.sweep", "message": "sweep_detected", "taskName": null, "direction": "bearish", "quality_score": 0.6}
+{"timestamp": "2025-10-24T10:15:52.577872+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.577960+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 3.8805970149253732, "structure": "sweep"}
+{"timestamp": "2025-10-24T10:15:52.578023+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.578091+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.578233+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002502857142857143}
+{"timestamp": "2025-10-24T10:15:52.578494+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.578681+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.578823+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.578906+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.777445855115758, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.578969+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.579036+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.579191+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00024885714285714284}
+{"timestamp": "2025-10-24T10:15:52.579576+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.579726+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.579786+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.579928+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00026885714285714284}
+{"timestamp": "2025-10-24T10:15:52.580200+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.580391+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.580535+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.580619+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.3829787234042554, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.580686+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.580753+00:00", "level": "WARNING", "logger": "core.execution.mt5_executor", "message": "order_validation_failed", "taskName": null, "error": "RR (1.38) must be >= 1.5", "symbol": "EURUSD"}
+{"timestamp": "2025-10-24T10:15:52.580897+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0002892142857142857}
+{"timestamp": "2025-10-24T10:15:52.581256+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.581399+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.581457+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.581582+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00031135714285714284}
+{"timestamp": "2025-10-24T10:15:52.581952+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.582098+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.582156+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.582278+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003717142857142857}
+{"timestamp": "2025-10-24T10:15:52.582547+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.582739+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.582884+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.582968+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.3436442725954567, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.583029+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.583093+00:00", "level": "WARNING", "logger": "core.execution.mt5_executor", "message": "order_validation_failed", "taskName": null, "error": "RR (1.34) must be >= 1.5", "symbol": "EURUSD"}
+{"timestamp": "2025-10-24T10:15:52.583239+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0003985}
+{"timestamp": "2025-10-24T10:15:52.583672+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.583743+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.583893+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00041678571428571426}
+{"timestamp": "2025-10-24T10:15:52.584353+00:00", "level": "DEBUG", "logger": "core.structure.sweep", "message": "sweep_detected", "taskName": null, "direction": "bullish", "quality_score": 0.6}
+{"timestamp": "2025-10-24T10:15:52.584664+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.584776+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 3.7762237762237763, "structure": "sweep"}
+{"timestamp": "2025-10-24T10:15:52.584842+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.584912+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.585096+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00043607142857142857}
+{"timestamp": "2025-10-24T10:15:52.585553+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.585619+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.585754+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004582142857142857}
+{"timestamp": "2025-10-24T10:15:52.586203+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.586262+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.586388+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004992857142857143}
+{"timestamp": "2025-10-24T10:15:52.586777+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.586938+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.586996+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.587123+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005282142857142857}
+{"timestamp": "2025-10-24T10:15:52.587257+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector OrderBlockDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.587407+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.587679+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.587954+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.588045+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.7872340425531914, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.588129+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.588203+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.588360+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005542857142857143}
+{"timestamp": "2025-10-24T10:15:52.588753+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.588904+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.588962+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.589096+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005928571428571429}
+{"timestamp": "2025-10-24T10:15:52.589510+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.589671+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.589732+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.589868+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006103571428571428}
+{"timestamp": "2025-10-24T10:15:52.590012+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector OrderBlockDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.590168+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.590455+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.590610+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.590669+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.590803+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006260714285714285}
+{"timestamp": "2025-10-24T10:15:52.591276+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.591334+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.591468+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006257142857142858}
+{"timestamp": "2025-10-24T10:15:52.591883+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.592044+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.592100+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.592231+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006218571428571429}
+{"timestamp": "2025-10-24T10:15:52.592642+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.592800+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.592857+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.592990+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0006175714285714286}
+{"timestamp": "2025-10-24T10:15:52.593415+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.593579+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector EngulfingDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.593656+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.593711+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.593845+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005597142857142857}
+{"timestamp": "2025-10-24T10:15:52.594054+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.594439+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.594500+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.594639+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005429285714285714}
+{"timestamp": "2025-10-24T10:15:52.595034+00:00", "level": "DEBUG", "logger": "core.structure.sweep", "message": "sweep_detected", "taskName": null, "direction": "bearish", "quality_score": 0.6}
+{"timestamp": "2025-10-24T10:15:52.595269+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.595369+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 2.2503961965134707, "structure": "sweep"}
+{"timestamp": "2025-10-24T10:15:52.595441+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.595515+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.595712+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000534}
+{"timestamp": "2025-10-24T10:15:52.596060+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.596363+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.596457+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.617277749874435, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.596522+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.596591+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "SELL"}
+{"timestamp": "2025-10-24T10:15:52.596769+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005286428571428572}
+{"timestamp": "2025-10-24T10:15:52.597097+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bearish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.597339+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.597517+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.597606+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "SELL", "rr": 1.4244465832531281, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.597670+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.597739+00:00", "level": "WARNING", "logger": "core.execution.mt5_executor", "message": "order_validation_failed", "taskName": null, "error": "RR (1.42) must be >= 1.5", "symbol": "EURUSD"}
+{"timestamp": "2025-10-24T10:15:52.597908+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005161428571428572}
+{"timestamp": "2025-10-24T10:15:52.598133+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.598514+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.598573+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.598717+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004815}
+{"timestamp": "2025-10-24T10:15:52.599233+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.599308+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.599457+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004872142857142857}
+{"timestamp": "2025-10-24T10:15:52.599913+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.600097+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.600206+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.600478+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0004754285714285714}
+{"timestamp": "2025-10-24T10:15:52.601370+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.601719+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.601846+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.602124+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00047185714285714284}
+{"timestamp": "2025-10-24T10:15:52.602970+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.603397+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.603499+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.603669+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00047364285714285716}
+{"timestamp": "2025-10-24T10:15:52.604112+00:00", "level": "DEBUG", "logger": "core.structure.sweep", "message": "sweep_detected", "taskName": null, "direction": "bullish", "quality_score": 0.6}
+{"timestamp": "2025-10-24T10:15:52.604368+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.604473+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 2.6325411334552102, "structure": "sweep"}
+{"timestamp": "2025-10-24T10:15:52.604541+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.604614+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.604810+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005118571428571429}
+{"timestamp": "2025-10-24T10:15:52.605190+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.605452+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.605676+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.605783+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.075561606535058, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.605851+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.605923+00:00", "level": "WARNING", "logger": "core.execution.mt5_executor", "message": "order_validation_failed", "taskName": null, "error": "RR (1.08) must be >= 1.5", "symbol": "EURUSD"}
+{"timestamp": "2025-10-24T10:15:52.606118+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.000519}
+{"timestamp": "2025-10-24T10:15:52.606367+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.606808+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.606883+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.607066+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005228571428571428}
+{"timestamp": "2025-10-24T10:15:52.607644+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.607717+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.607877+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005246428571428571}
+{"timestamp": "2025-10-24T10:15:52.608405+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.608623+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.608688+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.608844+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005621428571428572}
+{"timestamp": "2025-10-24T10:15:52.609019+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector OrderBlockDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.609203+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector FairValueGapDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.609420+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.609679+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.609862+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.609954+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.755813953488372, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.610018+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.610089+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.610267+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.0005710714285714286}
+{"timestamp": "2025-10-24T10:15:52.610841+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 0}
+{"timestamp": "2025-10-24T10:15:52.610904+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_no_structures", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.611071+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "indicator_atr_success", "taskName": null, "atr": 0.00061}
+{"timestamp": "2025-10-24T10:15:52.611428+00:00", "level": "DEBUG", "logger": "core.structure.break_of_structure", "message": "bos_detected", "taskName": null, "direction": "bullish", "quality_score": 0.65}
+{"timestamp": "2025-10-24T10:15:52.611678+00:00", "level": "WARNING", "logger": "core.structure.manager", "message": "Error in detector UnifiedZoneRejectionDetector: unsupported operand type(s) for *: 'decimal.Decimal' and 'float'", "taskName": null}
+{"timestamp": "2025-10-24T10:15:52.611862+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_4_structures_detected", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.611951+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "decision_generated", "taskName": null, "type": "BUY", "rr": 1.5309842041312272, "structure": "break_of_structure"}
+{"timestamp": "2025-10-24T10:15:52.612016+00:00", "level": "DEBUG", "logger": "core.orchestration.pipeline", "message": "stage_5_decisions_generated", "taskName": null, "count": 1}
+{"timestamp": "2025-10-24T10:15:52.612086+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "order_validation_passed", "taskName": null, "symbol": "EURUSD", "type": "BUY"}
+{"timestamp": "2025-10-24T10:15:52.612182+00:00", "level": "INFO", "logger": "core.execution.mt5_executor", "message": "dry_run_summary", "taskName": null, "total_orders": 24, "passed": 24, "failed": 0}
+{"timestamp": "2025-10-24T10:15:52.612260+00:00", "level": "INFO", "logger": "core.orchestration.pipeline", "message": "session_finalized", "taskName": null, "session": "BACKTEST", "bars_processed": 32, "decisions_generated": 33, "execution_results": 33}

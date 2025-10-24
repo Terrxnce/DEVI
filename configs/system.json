@@ -1,0 +1,60 @@
+{
+  "system_configs": {
+    "timeframe": "15m",
+    "timezone": "UTC",
+    "deterministic_mode": true,
+    "enable_logging": true,
+    "log_level": "INFO",
+    "max_memory_structures": 1000,
+    "cleanup_interval_minutes": 60,
+    "data_source": "csv",
+    "synthetic_mode": false,
+    "data": {
+      "source": "csv",
+      "csv_path": "infra/data/eurusd_m15_clean.csv",
+      "symbol": "EURUSD",
+      "timeframe": "M15"
+    },
+    "execution": {
+      "enabled": true,
+      "mode": "dry-run",
+      "min_rr": 1.5,
+      "price_side": {"BUY": "ASK", "SELL": "BID"},
+      "emergency_close": {"deviation": 20, "type_filling": "IOC", "max_retries": 3}
+    },
+    "features": {
+      "unified_zone_rejection": false
+    }
+  },
+  "pipeline_configs": {
+    "enable_pre_filters": true,
+    "enable_indicators": true,
+    "enable_structure_detection": true,
+    "enable_scoring": true,
+    "enable_guards": true,
+    "enable_sltp_planning": true,
+    "max_pipeline_processing_time_ms": 1000
+  },
+  "parity_configs": {
+    "enable_parity_mode": true,
+    "use_fixed_seed": true,
+    "seed_value": 42,
+    "disable_randomness": true,
+    "use_system_time": false,
+    "mock_external_calls": true
+  },
+  "performance_configs": {
+    "enable_caching": true,
+    "cache_size_mb": 100,
+    "enable_parallel_processing": false,
+    "max_workers": 1
+  },
+  "validation_configs": {
+    "validate_input_data": true,
+    "validate_outputs": true,
+    "enable_checksums": true,
+    "checksum_algorithm": "sha256"
+  }
+}
+
+
