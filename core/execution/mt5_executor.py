@@ -191,3 +191,11 @@ class MT5Executor:
         """Stub: close positions for provided symbols. In dry-run, just log."""
         symbols = symbols or []
         logger.info("positions_closed", extra={"symbols": symbols, "mode": self.mode.value})
+
+    def get_spread(self, symbol: str) -> float:
+        """Stub: current spread. In dry-run returns a small positive value (in price units)."""
+        return 0.00022
+
+    def get_baseline_spread(self, symbol: str) -> float:
+        """Stub: baseline spread estimate for symbol (in price units)."""
+        return 0.00010

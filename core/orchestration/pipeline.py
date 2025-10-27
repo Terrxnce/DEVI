@@ -64,6 +64,71 @@ class TradingPipeline:
                     "timestamp": timestamp.isoformat()
                 })
                 return decisions
+
+            # Circuit breaker gate
+            if self.session_mgr.session_counters.get("full_sl_hits", 0) >= self.session_mgr.get_max_full_sl_hits():
+                logger.info("circuit_breaker_tripped", extra={
+                    "session": self.session_mgr.current_session,
+                    "full_sl_hits": self.session_mgr.session_counters.get("full_sl_hits", 0),
+                })
+                return decisions
+
+            # Volatility pause auto-resume
+            if self.session_mgr.clear_pause_if_elapsed(timestamp):
+                logger.info("volatility_pause_cleared", extra={
+                    "session": self.session_mgr.current_session,
+                    "timestamp": timestamp.isoformat(),
+                })
+            if self.session_mgr.is_paused(timestamp):
+                logger.info("volatility_pause_active", extra={
+                    "session": self.session_mgr.current_session,
+                    "timestamp": timestamp.isoformat(),
+                })
+                return decisions
+
+            # Volatility pause trigger (spread/ATR)
+            vp = self.session_mgr.volatility_pause_cfg or {}
+            if vp.get("enable", False):
+                baseline_spread = self.executor.get_baseline_spread(data.symbol)
+                current_spread = self.executor.get_spread(data.symbol)
+                spread_mult = float((vp.get("spread_multipliers", {}) or {}).get("default", 1.8))
+                # ATR now and lookback avg over last N bars
+                lookback = int(vp.get("lookback_bars", 100))
+                atr_now = None
+                atr_avg = None
+                if len(data.bars) >= max(14, 2):
+                    try:
+                        atr_now = float(compute_atr_simple(list(data.bars)[-15:], 14) or 0)
+                        # naive TR average over last lookback
+                        bars_slice = list(data.bars)[-lookback:]
+                        trs = [float(abs(b.high - b.low)) for b in bars_slice] if bars_slice else []
+                        atr_avg = sum(trs) / len(trs) if trs else 0.0
+                    except Exception:
+                        atr_now = None
+                        atr_avg = None
+                atr_mult = float(vp.get("atr_spike_multiplier", 2.0))
+                spread_bad = current_spread > spread_mult * baseline_spread if baseline_spread and current_spread else False
+                atr_bad = (atr_now is not None and atr_avg and atr_avg > 0 and atr_now > atr_mult * atr_avg)
+                if spread_bad or atr_bad:
+                    pause_secs = int(vp.get("min_pause_seconds", 120))
+                    until = timestamp.replace(tzinfo=timezone.utc) if timestamp.tzinfo is None else timestamp.astimezone(timezone.utc)
+                    until = until + (timezone.utc.utcoffset(until) or (until - until))  # no-op ensure tz
+                    # naive add seconds
+                    from datetime import timedelta
+                    self.session_mgr.pause_until(until + timedelta(seconds=pause_secs))
+                    logger.info("volatility_pause", extra={
+                        "session": self.session_mgr.current_session,
+                        "symbol": data.symbol,
+                        "spread": current_spread,
+                        "baseline_spread": baseline_spread,
+                        "spread_multiplier": spread_mult,
+                        "atr_now": atr_now,
+                        "atr_avg": atr_avg,
+                        "atr_multiplier": atr_mult,
+                        "pause_seconds": pause_secs,
+                        "timestamp": timestamp.isoformat(),
+                    })
+                    return decisions
         except Exception as e:
             logger.warning("pipeline_processing_error", extra={"error": str(e)})
 
