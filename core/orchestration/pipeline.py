@@ -4,6 +4,7 @@ import logging
 from decimal import Decimal
 from datetime import datetime, timezone
 from typing import List, Tuple
+import os
 
 from ..models.ohlcv import OHLCV
 from ..models.structure import Structure
@@ -12,6 +13,7 @@ from ..models.config import Config
 from ..structure.manager import StructureManager
 from ..execution.mt5_executor import MT5Executor, ExecutionMode
 from ..indicators.atr import compute_atr_simple
+from .session_manager import SessionManager
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +30,10 @@ class TradingPipeline:
         self.execution_results = []
         self.logger = logger
         self.broker_symbols = {}
+        # Session manager initialization (UTC windows)
+        sessions_path = os.path.join(os.getcwd(), 'configs', 'sessions.json')
+        system_path = os.path.join(os.getcwd(), 'configs', 'system.json')
+        self.session_mgr = SessionManager(sessions_path, system_path)
     
     def process_bar(self, data: OHLCV, timestamp: datetime) -> List[Decision]:
         """
@@ -41,7 +47,26 @@ class TradingPipeline:
             List of decisions generated
         """
         decisions = []
-        
+
+        try:
+            # Session rotation and market status guard
+            prev_sess, new_sess = self.session_mgr.update_and_rotate(timestamp)
+            if new_sess is not None:
+                logger.info("session_rotated", extra={"from": prev_sess, "to": self.session_mgr.current_session})
+                if prev_sess and self.session_mgr.autonomy.get("close_positions_on_session_end", False):
+                    self.executor.close_positions(self.session_mgr.tracked_symbols)
+
+            # Market-closed / Symbol-unavailable guard
+            if not self.executor.is_market_open() or not self.executor.is_symbol_tradable(data.symbol):
+                logger.info("market_closed_skip", extra={
+                    "symbol": data.symbol,
+                    "session": self.session_mgr.current_session,
+                    "timestamp": timestamp.isoformat()
+                })
+                return decisions
+        except Exception as e:
+            logger.warning("pipeline_processing_error", extra={"error": str(e)})
+
         try:
             # Stage 1: Pre-filters
             if not self._process_pre_filters(data):
@@ -82,6 +107,15 @@ class TradingPipeline:
             
             self.processed_bars += 1
             self.decisions_generated += len(decisions)
+            # Update session counters
+            self.session_mgr.session_counters["decisions_attempted"] += len(structures)
+            self.session_mgr.session_counters["decisions_accepted"] += len(decisions)
+            logger.info("session_counters", extra={
+                "session": self.session_mgr.current_session,
+                "decisions_attempted": self.session_mgr.session_counters["decisions_attempted"],
+                "decisions_accepted": self.session_mgr.session_counters["decisions_accepted"],
+                "timestamp": timestamp.isoformat(),
+            })
             
         except Exception as e:
             logger.warning("pipeline_processing_error", extra={"error": str(e)})
