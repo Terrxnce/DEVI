@@ -54,6 +54,8 @@ class MT5Executor:
         self.min_rr = Decimal(str(self.config.get('min_rr', 1.5)))
         self.dry_run_orders = []
         logger.info(f"MT5Executor initialized in {mode.value} mode")
+        # Broker symbol registry placeholder (populated elsewhere in pipeline)
+        self._symbol_meta: Dict[str, Any] = {}
     
     def execute_order(
         self,
@@ -174,3 +176,18 @@ class MT5Executor:
         """Log dry-run summary."""
         stats = self.get_dry_run_stats()
         logger.info("dry_run_summary", extra=stats)
+
+    # --- Session wiring support methods ---
+
+    def is_market_open(self) -> bool:
+        """Stub: return True in dry-run; real impl would query MT5 market status."""
+        return True
+
+    def is_symbol_tradable(self, symbol: str) -> bool:
+        """Stub: return True if symbol appears valid; real impl would query MT5 symbol select/info."""
+        return bool(symbol) and isinstance(symbol, str)
+
+    def close_positions(self, symbols: Optional[List[str]] = None) -> None:
+        """Stub: close positions for provided symbols. In dry-run, just log."""
+        symbols = symbols or []
+        logger.info("positions_closed", extra={"symbols": symbols, "mode": self.mode.value})
