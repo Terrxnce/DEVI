@@ -15,7 +15,6 @@ from ..structure.manager import StructureManager
 from ..execution.mt5_executor import MT5Executor, ExecutionMode
 from ..indicators.atr import compute_atr_simple
 from .session_manager import SessionManager
-from .structure_exit_planner import StructureExitPlanner
 
 logger = logging.getLogger(__name__)
 
@@ -59,16 +58,8 @@ class TradingPipeline:
             logger.exception("broker_meta_init_failed", extra={"error": str(e)})
             self.broker_symbols = {}
 
-        # ---- Structure-first exit planner (PR: SLTP v1.6.0) ----
-        try:
-            base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
-            sltp_path = os.path.join(base_dir, "configs", "sltp.json")
-            with open(sltp_path, "r", encoding="utf-8") as f:
-                sltp_cfg = json.load(f)
-            self.exit_planner = StructureExitPlanner(sltp_cfg, self.broker_symbols)
-        except Exception as e:
-            logger.exception("exit_planner_init_failed", extra={"error": str(e)})
-            self.exit_planner = None
+        # Exit planner not required for PR3 validation
+        self.exit_planner = None
     def process_bar(self, data: OHLCV, timestamp: datetime) -> List[Decision]:
         """
         Process a single bar through the pipeline.
