@@ -396,13 +396,10 @@ class TradingPipeline:
         for structure in structures:
             try:
                 decision_type = DecisionType.BUY if structure.is_bullish else DecisionType.SELL
-<<<<<<< Updated upstream
-                
-                if structure.is_bullish:
-                    entry_price = data.latest_bar.close
-                    stop_loss = structure.low_price - (structure.price_range * Decimal('0.1'))
-                    take_profit = entry_price + (structure.price_range * Decimal('2.0'))
-=======
+
+                # Establish entry and ATR for planning
+                entry_price = data.latest_bar.close
+                atr_val = compute_atr_simple(list(data.bars), 14)
 
                 # Defaults
                 planned_sl = None
@@ -410,7 +407,7 @@ class TradingPipeline:
                 planned_method = "legacy"
                 expected_rr = None
 
-                # Structure-first exit planning
+                # Structure-first exit planning (if enabled and ATR available)
                 if self.exit_planner and atr_val is not None and getattr(self.exit_planner, "cfg", {}).get("enabled", False):
                     side_str = "BUY" if decision_type == DecisionType.BUY else "SELL"
 
@@ -454,19 +451,17 @@ class TradingPipeline:
                         planned_method = plan.get("method", "atr")
                         expected_rr = plan.get("expected_rr")
 
-                # Fallback if no plan
-                if planned_sl is None or planned_tp is None:
+                # Use planned values if available; otherwise fallback
+                if planned_sl is not None and planned_tp is not None:
+                    stop_loss = planned_sl
+                    take_profit = planned_tp
+                else:
                     if structure.is_bullish:
                         stop_loss = structure.low_price - (structure.price_range * Decimal("0.1"))
                         take_profit = entry_price + (structure.price_range * Decimal("2.0"))
                     else:
                         stop_loss = structure.high_price + (structure.price_range * Decimal("0.1"))
                         take_profit = entry_price - (structure.price_range * Decimal("2.0"))
->>>>>>> Stashed changes
-                else:
-                    entry_price = data.latest_bar.close
-                    stop_loss = structure.high_price + (structure.price_range * Decimal('0.1'))
-                    take_profit = entry_price - (structure.price_range * Decimal('2.0'))
                 
                 if decision_type == DecisionType.BUY:
                     risk = entry_price - stop_loss
