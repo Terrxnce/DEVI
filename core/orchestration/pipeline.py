@@ -317,6 +317,8 @@ class TradingPipeline:
                             "order_type": sized_decision.decision_type.value,
                             "volume_rounded": float(sized_decision.position_size),
                             "risk": sized_decision.metadata.get("risk", {}),
+                            "risk_budget": float(risk_budget),
+                            "cap_budget": float(cap_budget),
                             "session": self.session_mgr.current_session,
                             "entry": float(sized_decision.entry_price),
                             "sl": float(sized_decision.stop_loss),
@@ -504,13 +506,7 @@ class TradingPipeline:
                 })
             
             except Exception as e:
-<<<<<<< Updated upstream
-                logger.warning("decision_generation_error", extra={"error": str(e)})
-        
-=======
                 logger.exception("decision_generation_error", extra={"error": str(e)})
-
->>>>>>> Stashed changes
         return decisions
     
     def finalize_session(self, session_name: str) -> None:
