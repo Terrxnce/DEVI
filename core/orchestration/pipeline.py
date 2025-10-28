@@ -5,6 +5,7 @@ from decimal import Decimal
 from datetime import datetime, timezone
 from typing import List, Tuple
 import os
+import json
 
 from ..models.ohlcv import OHLCV
 from ..models.structure import Structure
@@ -34,6 +35,18 @@ class TradingPipeline:
         sessions_path = os.path.join(os.getcwd(), 'configs', 'sessions.json')
         system_path = os.path.join(os.getcwd(), 'configs', 'system.json')
         self.session_mgr = SessionManager(sessions_path, system_path)
+        # Load broker metadata and risk config
+        try:
+            with open(os.path.join(os.getcwd(), 'configs', 'broker_symbols.json'), 'r', encoding='utf-8') as f:
+                self.broker_symbols = json.load(f).get('symbols', {})
+        except Exception:
+            self.broker_symbols = {}
+        try:
+            with open(system_path, 'r', encoding='utf-8') as f:
+                syscfg = json.load(f)
+            self.risk_cfg = syscfg.get('risk', {"per_trade_pct": 0.25, "per_symbol_open_risk_cap_pct": 0.75})
+        except Exception:
+            self.risk_cfg = {"per_trade_pct": 0.25, "per_symbol_open_risk_cap_pct": 0.75}
     
     def process_bar(self, data: OHLCV, timestamp: datetime) -> List[Decision]:
         """
@@ -155,11 +168,81 @@ class TradingPipeline:
             decisions = self._process_decision_generation(structures, data, timestamp)
             logger.debug("stage_5_decisions_generated", extra={"count": len(decisions)})
             
-            # Stage 5: Execution
+            # Stage 5: Execution with risk sizing and caps
             if self.executor.enabled and decisions:
                 for decision in decisions:
+                    # Risk sizing based on post-clamp SL distance
+                    sym = data.symbol
+                    meta = self.broker_symbols.get(sym, {})
+                    point = float(meta.get('point', 0.0001))
+                    contract_size = float(meta.get('contract_size', 0.0)) or (100.0 if sym.upper().startswith('XAU') else 100000.0)
+                    min_lot = float(meta.get('volume_min', 0.01))
+                    max_lot = float(meta.get('volume_max', 100.0))
+                    lot_step = float(meta.get('volume_step', 0.01))
+
+                    equity = float(self.executor.get_equity())
+                    per_trade_pct = float(self.risk_cfg.get('per_trade_pct', 0.25)) / 100.0
+                    cap_pct = float(self.risk_cfg.get('per_symbol_open_risk_cap_pct', 0.75)) / 100.0
+                    risk_budget = equity * per_trade_pct
+
+                    stop_distance_points = abs(float(decision.entry_price) - float(decision.stop_loss)) / max(point, 1e-12)
+                    if stop_distance_points <= 0:
+                        logger.info("risk_too_small", extra={
+                            "session": self.session_mgr.current_session,
+                            "symbol": sym,
+                            "equity": equity,
+                            "per_trade_pct": per_trade_pct,
+                            "reason": "non_positive_stop_distance"
+                        })
+                        continue
+
+                    # Point value per lot: for USD-quoted FX and XAU this is contract_size * point
+                    point_value_per_lot = contract_size * point
+                    # Volume from risk = budget / (points * point_value_per_lot)
+                    volume_raw = risk_budget / max((stop_distance_points * point_value_per_lot), 1e-12)
+                    # Round down to lot_step
+                    steps = max(int(volume_raw / lot_step), 0)
+                    volume_rounded = steps * lot_step
+                    if volume_rounded < min_lot:
+                        logger.info("risk_too_small", extra={
+                            "session": self.session_mgr.current_session,
+                            "symbol": sym,
+                            "equity": equity,
+                            "per_trade_pct": per_trade_pct,
+                            "min_lot": min_lot,
+                            "computed_volume": volume_raw
+                        })
+                        continue
+                    volume_rounded = min(volume_rounded, max_lot)
+
+                    new_trade_risk = stop_distance_points * point_value_per_lot * volume_rounded
+                    open_risk_before = float(self.executor.get_open_risk_by_symbol(sym))
+                    cap_budget = equity * cap_pct
+                    if open_risk_before + new_trade_risk > cap_budget:
+                        logger.info("risk_cap_hit", extra={
+                            "session": self.session_mgr.current_session,
+                            "symbol": sym,
+                            "open_risk": open_risk_before,
+                            "new_trade_risk": new_trade_risk,
+                            "cap_pct": cap_pct,
+                            "equity": equity,
+                        })
+                        continue
+
+                    decision.position_size = Decimal(str(volume_rounded))
+                    # Attach risk metadata
+                    decision.metadata = dict(decision.metadata or {})
+                    decision.metadata['risk'] = {
+                        "new_trade_risk": float(new_trade_risk),
+                        "open_risk_before": float(open_risk_before),
+                        "cap_pct": float(cap_pct),
+                        "equity": float(equity),
+                        "stop_distance_points": float(stop_distance_points),
+                        "volume_rounded": float(volume_rounded),
+                    }
+
                     execution_result = self.executor.execute_order(
-                        symbol=data.symbol,
+                        symbol=sym,
                         order_type=decision.decision_type.value,
                         volume=float(decision.position_size),
                         entry_price=float(decision.entry_price),
@@ -169,6 +252,8 @@ class TradingPipeline:
                         magic=0
                     )
                     self.execution_results.append(execution_result)
+                    if execution_result.success:
+                        self.executor.add_open_risk(sym, new_trade_risk)
             
             self.processed_bars += 1
             self.decisions_generated += len(decisions)

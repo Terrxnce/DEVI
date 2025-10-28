@@ -56,6 +56,8 @@ class MT5Executor:
         logger.info(f"MT5Executor initialized in {mode.value} mode")
         # Broker symbol registry placeholder (populated elsewhere in pipeline)
         self._symbol_meta: Dict[str, Any] = {}
+        # Open risk ledger for dry-run
+        self._open_risk_by_symbol: Dict[str, float] = {}
     
     def execute_order(
         self,
@@ -191,11 +193,29 @@ class MT5Executor:
         """Stub: close positions for provided symbols. In dry-run, just log."""
         symbols = symbols or []
         logger.info("positions_closed", extra={"symbols": symbols, "mode": self.mode.value})
+        # Clear open risk for specified symbols (or all if empty)
+        if symbols:
+            for s in symbols:
+                self._open_risk_by_symbol[s] = 0.0
+        else:
+            self._open_risk_by_symbol = {}
 
     def get_spread(self, symbol: str) -> float:
         """Stub: current spread. In dry-run returns a small positive value (in price units)."""
-        return 0.00022
+        return 0.00010
 
     def get_baseline_spread(self, symbol: str) -> float:
         """Stub: baseline spread estimate for symbol (in price units)."""
         return 0.00010
+
+    # --- Risk sizing helpers ---
+
+    def get_equity(self) -> float:
+        """Stub: account equity for risk sizing in dry-run."""
+        return float(self.config.get('equity', 10000.0))
+
+    def get_open_risk_by_symbol(self, symbol: str) -> float:
+        return float(self._open_risk_by_symbol.get(symbol, 0.0))
+
+    def add_open_risk(self, symbol: str, amount: float) -> None:
+        self._open_risk_by_symbol[symbol] = float(self._open_risk_by_symbol.get(symbol, 0.0) + float(amount))
