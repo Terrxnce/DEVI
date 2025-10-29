@@ -20,6 +20,8 @@ class SessionManager:
         self.windows: List[SessionWindow] = []
         self.timezone = timezone.utc
         self.autonomy: Dict = {}
+        self.volatility_pause_cfg: Dict = {}
+        self.circuit_breakers_cfg: Dict = {"per_session": {"max_full_sl_hits": 2}}
         self.symbols: List[str] = []
         self._current_session: Optional[str] = None
         self._paused_until_ts: Optional[datetime] = None
@@ -46,6 +48,8 @@ class SessionManager:
         with open(self.system_path, "r", encoding="utf-8") as f:
             syscfg = json.load(f)
         self.autonomy = syscfg.get("autonomy", {})
+        self.volatility_pause_cfg = syscfg.get("volatility_pause", {})
+        self.circuit_breakers_cfg = syscfg.get("circuit_breakers", self.circuit_breakers_cfg)
         self.symbols = syscfg.get("symbols", [])
 
     def get_active_session(self, ts: datetime) -> Optional[str]:
@@ -71,6 +75,22 @@ class SessionManager:
             "decisions_attempted": 0,
             "decisions_accepted": 0,
         }
+
+    # Volatility pause helpers
+    def is_paused(self, ts: datetime) -> bool:
+        return self._paused_until_ts is not None and ts.astimezone(timezone.utc) < self._paused_until_ts
+
+    def pause_until(self, ts_until: datetime) -> None:
+        self._paused_until_ts = ts_until
+
+    def clear_pause_if_elapsed(self, ts: datetime) -> bool:
+        if self._paused_until_ts and ts.astimezone(timezone.utc) >= self._paused_until_ts:
+            self._paused_until_ts = None
+            return True
+        return False
+
+    def get_max_full_sl_hits(self) -> int:
+        return int(self.circuit_breakers_cfg.get("per_session", {}).get("max_full_sl_hits", 2))
 
     @property
     def current_session(self) -> Optional[str]:

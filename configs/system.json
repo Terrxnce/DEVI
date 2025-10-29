@@ -24,6 +24,10 @@
     },
     "features": {
       "unified_zone_rejection": false
+    },
+    "risk": {
+      "per_trade_pct": 0.25,
+      "per_symbol_open_risk_cap_pct": 0.75
     }
   },
   "pipeline_configs": {
@@ -56,5 +60,3 @@
     "checksum_algorithm": "sha256"
   }
 }
-
-
