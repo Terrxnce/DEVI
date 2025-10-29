@@ -1,11 +1,11 @@
 """Trading pipeline orchestration."""
 
 import logging
+import json
+import os
 from decimal import Decimal
 from datetime import datetime, timezone
-from typing import List, Tuple
-import os
-import json
+from typing import List
 
 from ..models.ohlcv import OHLCV
 from ..models.structure import Structure
@@ -15,38 +15,44 @@ from ..structure.manager import StructureManager
 from ..execution.mt5_executor import MT5Executor, ExecutionMode
 from ..indicators.atr import compute_atr_simple
 from .session_manager import SessionManager
+from .structure_exit_planner import StructureExitPlanner
 
 logger = logging.getLogger(__name__)
 
 
 class TradingPipeline:
     """Main trading pipeline orchestrator."""
-    
+
     def __init__(self, config: Config, executor: MT5Executor = None):
         self.config = config
         self.structure_manager = StructureManager(config.structure_configs)
         self.executor = executor or MT5Executor(ExecutionMode.DRY_RUN)
+
         # Counters / accumulators
-        self.processed_bars = 0            # bars that passed session/market guards (now increments early)
+        self.processed_bars = 0
         self.decisions_generated = 0
         self.execution_results = []
-        self.logger = logger
+        self._all_decisions: List[Decision] = []
 
         # ---- PR1: Sessions / guards ----
-        sessions_path = os.path.join(os.getcwd(), "configs", "sessions.json")
-        system_path = os.path.join(os.getcwd(), "configs", "system.json")
-        self.session_mgr = SessionManager(sessions_path, system_path)
+        try:
+            base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
+            sessions_path = os.path.join(base_dir, "configs", "sessions.json")
+            system_path = os.path.join(base_dir, "configs", "system.json")
+            self.session_mgr = SessionManager(sessions_path, system_path)
+        except Exception as e:
+            logger.warning("session_manager_init_failed", extra={"error": str(e)})
+            self.session_mgr = None
 
         # ---- PR3: Risk config + broker meta used by sizer ----
         self.risk_cfg = dict((self.config.system_configs or {}).get("risk", {}) or {})
         # sensible defaults so dry-run never crashes
-        self.risk_cfg.setdefault("per_trade_pct", 0.25)                # % of equity
-        self.risk_cfg.setdefault("per_symbol_open_risk_cap_pct", 0.75) # % of equity
+        self.risk_cfg.setdefault("per_trade_pct", 0.25)                 # % of equity
+        self.risk_cfg.setdefault("per_symbol_open_risk_cap_pct", 0.75)  # % of equity
         self.default_equity = float((self.config.system_configs or {}).get("equity", 10000.0))
 
         self.broker_symbols = {}
         try:
-            base_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
             broker_path = os.path.join(base_dir, "configs", "broker_symbols.json")
             if os.path.exists(broker_path):
                 with open(broker_path, "r", encoding="utf-8") as f:
@@ -58,68 +64,61 @@ class TradingPipeline:
             logger.exception("broker_meta_init_failed", extra={"error": str(e)})
             self.broker_symbols = {}
 
-        # Exit planner not required for PR3 validation
-        self.exit_planner = None
+        # Initialize exit planner (structure-first; optional via config)
+        try:
+            sltp_path = os.path.join(base_dir, "configs", "sltp.json")
+            with open(sltp_path, "r", encoding="utf-8") as f:
+                sltp_cfg = json.load(f)
+            self.exit_planner = StructureExitPlanner(sltp_cfg, self.broker_symbols)
+        except Exception as e:
+            logger.debug("exit_planner_init_failed", extra={"error": str(e)})
+            self.exit_planner = None
+
     def process_bar(self, data: OHLCV, timestamp: datetime) -> List[Decision]:
-        """
-        Process a single bar through the pipeline.
-        
-        Args:
-            data: OHLCV time series (cumulative bars up to current)
-            timestamp: Current bar timestamp
-        
-        Returns:
-            List of decisions generated
-        """
-        decisions = []
+        """Process a single bar through the pipeline."""
+        decisions: List[Decision] = []
 
         try:
-            # Session rotation and market status guard
+            # Session rotation + optional close-out (PR1)
             prev_sess, new_sess = self.session_mgr.update_and_rotate(timestamp)
             if new_sess is not None:
                 logger.info("session_rotated", extra={"from": prev_sess, "to": self.session_mgr.current_session})
                 if prev_sess and self.session_mgr.autonomy.get("close_positions_on_session_end", False):
                     self.executor.close_positions(self.session_mgr.tracked_symbols)
 
-            # Market-closed / Symbol-unavailable guard
+            # Market guards (PR1)
             if not self.executor.is_market_open() or not self.executor.is_symbol_tradable(data.symbol):
-                logger.info("market_closed_skip", extra={
-                    "symbol": data.symbol,
-                    "session": self.session_mgr.current_session,
-                    "timestamp": timestamp.isoformat()
-                })
+                logger.info(
+                    "market_closed_skip",
+                    extra={"symbol": data.symbol, "session": self.session_mgr.current_session, "timestamp": timestamp.isoformat()},
+                )
                 return decisions
 
-            # >>> Count the bar EARLY so early-return paths still count
+            # Count the bar EARLY so early-return paths still count
             self.processed_bars += 1
 
-            # Circuit breaker gate
+            # Circuit breaker gate (PR2)
             if self.session_mgr.session_counters.get("full_sl_hits", 0) >= self.session_mgr.get_max_full_sl_hits():
-                logger.info("circuit_breaker_tripped", extra={
-                    "session": self.session_mgr.current_session,
-                    "full_sl_hits": self.session_mgr.session_counters.get("full_sl_hits", 0),
-                })
+                logger.info(
+                    "circuit_breaker_tripped",
+                    extra={"session": self.session_mgr.current_session, "full_sl_hits": self.session_mgr.session_counters.get("full_sl_hits", 0)},
+                )
                 return decisions
 
-            # Volatility pause auto-resume
+            # Volatility pause auto-resume (PR2)
             if self.session_mgr.clear_pause_if_elapsed(timestamp):
-                logger.info("volatility_pause_cleared", extra={
-                    "session": self.session_mgr.current_session,
-                    "timestamp": timestamp.isoformat(),
-                })
+                logger.info("volatility_pause_cleared", extra={"session": self.session_mgr.current_session, "timestamp": timestamp.isoformat()})
             if self.session_mgr.is_paused(timestamp):
-                logger.info("volatility_pause_active", extra={
-                    "session": self.session_mgr.current_session,
-                    "timestamp": timestamp.isoformat(),
-                })
+                logger.info("volatility_pause_active", extra={"session": self.session_mgr.current_session, "timestamp": timestamp.isoformat()})
                 return decisions
 
-            # Volatility pause trigger (spread/ATR)
+            # Volatility pause trigger (spread/ATR) (PR2)
             vp = self.session_mgr.volatility_pause_cfg or {}
             if vp.get("enable", False):
                 baseline_spread = self.executor.get_baseline_spread(data.symbol)
                 current_spread = self.executor.get_spread(data.symbol)
                 spread_mult = float((vp.get("spread_multipliers", {}) or {}).get("default", 1.8))
+
                 # ATR now and lookback avg over last N bars
                 lookback = int(vp.get("lookback_bars", 100))
                 atr_now = None
@@ -127,36 +126,39 @@ class TradingPipeline:
                 if len(data.bars) >= max(14, 2):
                     try:
                         atr_now = float(compute_atr_simple(list(data.bars)[-15:], 14) or 0)
-                        # naive TR average over last lookback
                         bars_slice = list(data.bars)[-lookback:]
                         trs = [float(abs(b.high - b.low)) for b in bars_slice] if bars_slice else []
                         atr_avg = sum(trs) / len(trs) if trs else 0.0
                     except Exception:
                         atr_now = None
                         atr_avg = None
+
                 atr_mult = float(vp.get("atr_spike_multiplier", 2.0))
                 spread_bad = current_spread > spread_mult * baseline_spread if baseline_spread and current_spread else False
                 atr_bad = (atr_now is not None and atr_avg and atr_avg > 0 and atr_now > atr_mult * atr_avg)
+
                 if spread_bad or atr_bad:
-                    pause_secs = int(vp.get("min_pause_seconds", 120))
-                    until = timestamp.replace(tzinfo=timezone.utc) if timestamp.tzinfo is None else timestamp.astimezone(timezone.utc)
-                    until = until + (timezone.utc.utcoffset(until) or (until - until))  # no-op ensure tz
-                    # naive add seconds
                     from datetime import timedelta
+                    pause_secs = int(vp.get("min_pause_seconds", 120))
+                    until = timestamp if timestamp.tzinfo else timestamp.replace(tzinfo=timezone.utc)
                     self.session_mgr.pause_until(until + timedelta(seconds=pause_secs))
-                    logger.info("volatility_pause", extra={
-                        "session": self.session_mgr.current_session,
-                        "symbol": data.symbol,
-                        "spread": current_spread,
-                        "baseline_spread": baseline_spread,
-                        "spread_multiplier": spread_mult,
-                        "atr_now": atr_now,
-                        "atr_avg": atr_avg,
-                        "atr_multiplier": atr_mult,
-                        "pause_seconds": pause_secs,
-                        "timestamp": timestamp.isoformat(),
-                    })
+                    logger.info(
+                        "volatility_pause",
+                        extra={
+                            "session": self.session_mgr.current_session,
+                            "symbol": data.symbol,
+                            "spread": current_spread,
+                            "baseline_spread": baseline_spread,
+                            "spread_multiplier": spread_mult,
+                            "atr_now": atr_now,
+                            "atr_avg": atr_avg,
+                            "atr_multiplier": atr_mult,
+                            "pause_seconds": pause_secs,
+                            "timestamp": timestamp.isoformat(),
+                        },
+                    )
                     return decisions
+
         except Exception as e:
             logger.exception(
                 "pipeline_processing_error",
@@ -164,29 +166,24 @@ class TradingPipeline:
             )
 
         try:
-            # Stage 1: Pre-filters
+            # Pre-filters
             if not self._process_pre_filters(data):
-                logger.debug("stage_2_pre_filters_failed")
                 return decisions
-            
-            # Stage 2: Indicators
+
+            # Indicators
             if not self._process_indicators(data):
-                logger.debug("stage_3_indicators_failed")
                 return decisions
-            
-            # Stage 3: Structure detection
+
+            # Structure detection
             structures = self._process_structure_detection(data)
-            logger.debug("stage_4_structures_detected", extra={"count": len(structures)})
-            
             if not structures:
-                logger.debug("stage_4_no_structures")
                 return decisions
-            
-            # Stage 4: Decision generation
+
+            # Decision generation (structure-first exit plan + clamps)
             decisions = self._process_decision_generation(structures, data, timestamp)
             logger.debug("stage_5_decisions_generated", extra={"count": len(decisions)})
-            
-            # Stage 5: Execution with risk sizing and caps
+
+            # ---- PR3: Risk sizing + per-symbol open-risk cap, then execute ----
             if self.executor.enabled and decisions:
                 sym = data.symbol
                 meta = self.broker_symbols.get(sym, {})
@@ -219,35 +216,37 @@ class TradingPipeline:
                 risk_budget = max(equity * per_trade_pct, 0.0)
                 cap_budget = equity * cap_pct
 
-                # iterate with index so we can replace decisions[i] with a sized copy
                 for idx, decision in enumerate(decisions):
                     stop_distance_points = abs(float(decision.entry_price) - float(decision.stop_loss)) / max(point, 1e-12)
                     if stop_distance_points <= 0:
-                        logger.info("risk_too_small", extra={
-                            "session": self.session_mgr.current_session,
-                            "symbol": sym,
-                            "equity": equity,
-                            "per_trade_pct": per_trade_pct,
-                            "reason": "non_positive_stop_distance"
-                        })
+                        logger.info(
+                            "risk_too_small",
+                            extra={
+                                "session": self.session_mgr.current_session,
+                                "symbol": sym,
+                                "equity": equity,
+                                "per_trade_pct": per_trade_pct,
+                                "reason": "non_positive_stop_distance",
+                            },
+                        )
                         continue
 
-                    # Point value per lot: for USD-quoted FX and XAU this is contract_size * point
                     point_value_per_lot = contract_size * point
-                    # raw volume from risk budget
                     volume_raw = risk_budget / max((stop_distance_points * point_value_per_lot), 1e-12)
-                    # Round down to lot_step
                     steps = max(int(volume_raw / lot_step), 0)
                     volume_rounded = steps * lot_step
                     if volume_rounded < min_lot:
-                        logger.info("risk_too_small", extra={
-                            "session": self.session_mgr.current_session,
-                            "symbol": sym,
-                            "equity": equity,
-                            "per_trade_pct": per_trade_pct,
-                            "min_lot": min_lot,
-                            "computed_volume": volume_raw
-                        })
+                        logger.info(
+                            "risk_too_small",
+                            extra={
+                                "session": self.session_mgr.current_session,
+                                "symbol": sym,
+                                "equity": equity,
+                                "per_trade_pct": per_trade_pct,
+                                "min_lot": min_lot,
+                                "computed_volume": volume_raw,
+                            },
+                        )
                         continue
                     volume_rounded = min(volume_rounded, max_lot)
 
@@ -260,14 +259,17 @@ class TradingPipeline:
                             open_risk_before = 0.0
 
                     if open_risk_before + new_trade_risk > cap_budget:
-                        logger.info("risk_cap_hit", extra={
-                            "session": self.session_mgr.current_session,
-                            "symbol": sym,
-                            "open_risk": open_risk_before,
-                            "new_trade_risk": new_trade_risk,
-                            "cap_pct": cap_pct,
-                            "equity": equity,
-                        })
+                        logger.info(
+                            "risk_cap_hit",
+                            extra={
+                                "session": self.session_mgr.current_session,
+                                "symbol": sym,
+                                "open_risk": open_risk_before,
+                                "new_trade_risk": new_trade_risk,
+                                "cap_pct": cap_pct,
+                                "equity": equity,
+                            },
+                        )
                         continue
 
                     # Build a new sized Decision (frozen dataclass safe)
@@ -289,7 +291,7 @@ class TradingPipeline:
                         entry_price=decision.entry_price,
                         stop_loss=decision.stop_loss,
                         take_profit=decision.take_profit,
-                        position_size=Decimal(str(volume_rounded)),  # updated size
+                        position_size=Decimal(str(volume_rounded)),
                         risk_reward_ratio=decision.risk_reward_ratio,
                         structure_id=decision.structure_id,
                         confidence_score=decision.confidence_score,
@@ -328,71 +330,61 @@ class TradingPipeline:
                         magic=0,
                     )
                     self.execution_results.append(execution_result)
-                    if getattr(execution_result, "success", False):
-                        # track open risk accumulation in dry-run
-                        if hasattr(self.executor, "add_open_risk"):
-                            try:
-                                self.executor.add_open_risk(sym, new_trade_risk)
-                            except Exception:
-                                pass
-            # tally decisions
+
+                    # Track open-risk accumulation in dry-run if executor supports it
+                    if getattr(execution_result, "success", False) and hasattr(self.executor, "add_open_risk"):
+                        try:
+                            self.executor.add_open_risk(sym, new_trade_risk)
+                        except Exception:
+                            pass
+
+            # stats
             self.decisions_generated += len(decisions)
-            # Update session counters
+
+            # Session counters (PR1)
             self.session_mgr.session_counters["decisions_attempted"] += len(structures)
             self.session_mgr.session_counters["decisions_accepted"] += len(decisions)
-            logger.info("session_counters", extra={
-                "session": self.session_mgr.current_session,
-                "decisions_attempted": self.session_mgr.session_counters["decisions_attempted"],
-                "decisions_accepted": self.session_mgr.session_counters["decisions_accepted"],
-                "timestamp": timestamp.isoformat(),
-            })
-            
+            logger.info(
+                "session_counters",
+                extra={
+                    "session": self.session_mgr.current_session,
+                    "decisions_attempted": self.session_mgr.session_counters["decisions_attempted"],
+                    "decisions_accepted": self.session_mgr.session_counters["decisions_accepted"],
+                    "timestamp": timestamp.isoformat(),
+                },
+            )
+
         except Exception as e:
             logger.exception(
                 "pipeline_processing_error",
                 extra={"error": str(e), "symbol": getattr(data, "symbol", None), "timestamp": timestamp.isoformat()},
             )
+
         return decisions
-    
+
     def _process_pre_filters(self, data: OHLCV) -> bool:
-        """Check pre-filter conditions."""
-        is_test_mode = self.config.system_configs.get('synthetic_mode', False) or \
-                       self.config.system_configs.get('data_source') in ['synthetic', 'csv']
+        is_test_mode = self.config.system_configs.get("synthetic_mode", False) or \
+                       self.config.system_configs.get("data_source") in ["synthetic", "csv"]
         min_bars = 5 if is_test_mode else 50
-        
-        if len(data.bars) < min_bars:
-            logger.debug("pre_filter_insufficient_bars", extra={"bars": len(data.bars), "min_required": min_bars})
-            return False
-        
-        return True
-    
+        return len(data.bars) >= min_bars
+
     def _process_indicators(self, data: OHLCV) -> bool:
-        """Calculate indicators."""
         atr = compute_atr_simple(list(data.bars), 14)
-        if atr is None:
-            logger.debug("indicator_atr_failed")
-            return False
-        
-        logger.debug("indicator_atr_success", extra={"atr": float(atr)})
-        return True
-    
+        return atr is not None
+
     def _process_structure_detection(self, data: OHLCV) -> List[Structure]:
-        """Detect market structures."""
-        session_id = "test_session"
-        structures = self.structure_manager.detect_structures(data, session_id)
-        return structures
-    
+        return self.structure_manager.detect_structures(data, "test_session")
+
     def _process_decision_generation(self, structures: List[Structure], data: OHLCV, timestamp: datetime) -> List[Decision]:
-        """Generate trading decisions from structures."""
-        decisions = []
-        
+        decisions: List[Decision] = []
+
+        atr_val = compute_atr_simple(list(data.bars), 14)
+        atr_val = Decimal(str(atr_val)) if atr_val is not None else None
+        entry_price = data.latest_bar.close
+
         for structure in structures:
             try:
                 decision_type = DecisionType.BUY if structure.is_bullish else DecisionType.SELL
-
-                # Establish entry and ATR for planning
-                entry_price = data.latest_bar.close
-                atr_val = compute_atr_simple(list(data.bars), 14)
 
                 # Defaults
                 planned_sl = None
@@ -455,19 +447,29 @@ class TradingPipeline:
                     else:
                         stop_loss = structure.high_price + (structure.price_range * Decimal("0.1"))
                         take_profit = entry_price - (structure.price_range * Decimal("2.0"))
-                
+
+                # Safety clamp
+                epsilon = max(Decimal("0.00001"), structure.price_range * Decimal("0.01"))
                 if decision_type == DecisionType.BUY:
+                    if stop_loss >= entry_price:
+                        stop_loss = entry_price - epsilon
+                    if take_profit <= entry_price:
+                        take_profit = entry_price + epsilon
                     risk = entry_price - stop_loss
                     reward = take_profit - entry_price
                 else:
+                    if stop_loss <= entry_price:
+                        stop_loss = entry_price + epsilon
+                    if take_profit >= entry_price:
+                        take_profit = entry_price - epsilon
                     risk = stop_loss - entry_price
                     reward = entry_price - take_profit
-                
+
                 if risk <= 0:
                     continue
-                
+
                 rr = reward / risk
-                
+
                 decision = Decision(
                     decision_type=decision_type,
                     symbol=data.symbol,
@@ -476,45 +478,62 @@ class TradingPipeline:
                     entry_price=entry_price,
                     stop_loss=stop_loss,
                     take_profit=take_profit,
-                    position_size=Decimal('0.1'),
+                    position_size=Decimal("0.1"),
                     risk_reward_ratio=rr,
                     structure_id=structure.structure_id,
                     confidence_score=structure.quality_score,
-                    reasoning=f"Structure: {structure.structure_type.value}",
+                    reasoning=f"{structure.structure_type.value}",
                     status=DecisionStatus.VALIDATED,
                     metadata={
-                        'structure_type': structure.structure_type.value,
-                        'structure_quality': structure.quality.value,
-                        'rr': float(rr)
-                    }
+                        "structure_type": structure.structure_type.value,
+                        "rr": float(rr),
+                        "exit_method": planned_method,
+                        "expected_rr": float(expected_rr) if expected_rr else float(rr),
+                        "post_clamp_rr": float(rr),
+                    },
                 )
-                
+
                 decisions.append(decision)
-                logger.debug("decision_generated", extra={
-                    "type": decision_type.value,
-                    "rr": float(rr),
-                    "structure": structure.structure_type.value
-                })
-            
+                self._all_decisions.append(decision)
+
             except Exception as e:
                 logger.exception("decision_generation_error", extra={"error": str(e)})
+
         return decisions
-    
+
     def finalize_session(self, session_name: str) -> None:
-        """Finalize session and log summary."""
-        self.executor.log_dry_run_summary()
-        logger.info("session_finalized", extra={
-            "session": session_name,
-            "bars_processed": self.processed_bars,
-            "decisions_generated": self.decisions_generated,
-            "execution_results": len(self.execution_results)
-        })
-    
+        hist = {"order_block": 0, "fair_value_gap": 0, "atr": 0, "legacy": 0}
+        rr_counts = {k: [0, 0] for k in list(hist.keys()) + ["overall"]}
+
+        for d in self._all_decisions:
+            method = str(d.metadata.get("exit_method", "legacy"))
+            hist[method] = hist.get(method, 0) + 1
+            rr = Decimal(str(d.metadata.get("post_clamp_rr", d.risk_reward_ratio)))
+
+            if rr >= Decimal("1.5"):
+                rr_counts[method][0] += 1
+                rr_counts["overall"][0] += 1
+            rr_counts[method][1] += 1
+            rr_counts["overall"][1] += 1
+
+        def pct(v):
+            return float((Decimal(v[0]) / Decimal(v[1]) * 100) if v[1] else 0)
+
+        logger.info(
+            "dry_run_exit_summary",
+            extra={
+                "exit_method_hist": hist,
+                "rr_gate": {
+                    "overall_ge_1_5_pct": pct(rr_counts["overall"]),
+                    "by_method": {k: pct(rr_counts[k]) for k in hist.keys()},
+                },
+            },
+        )
+
     def get_pipeline_stats(self) -> dict:
-        """Get pipeline statistics."""
         return {
             "processed_bars": self.processed_bars,
             "decisions_generated": self.decisions_generated,
             "execution_results": len(self.execution_results),
-            "executor_mode": self.executor.mode.value
+            "executor_mode": self.executor.mode.value,
         }

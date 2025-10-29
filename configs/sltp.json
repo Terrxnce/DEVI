@@ -56,6 +56,18 @@
     "use_fixed_if_atr_fails": false,
     "default_stop_pips": 15,
     "default_tp_pips": 30
+  },
+  "sltp_planning": {
+    "enabled": true,
+    "exit_priority": ["order_block", "fair_value_gap", "atr"],
+    "atr_fallback_enabled": true,
+    "buffers": {
+      "sl_atr_buffer": 0.15,
+      "tp_extension_atr": 1.0,
+      "min_buffer_pips": 1.0,
+      "max_buffer_pips": 10.0
+    },
+    "min_rr_gate": 1.5
   }
 }
 
