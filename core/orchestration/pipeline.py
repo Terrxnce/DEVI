@@ -15,7 +15,6 @@ from ..structure.manager import StructureManager
 from ..execution.mt5_executor import MT5Executor, ExecutionMode
 from ..indicators.atr import compute_atr_simple
 from .session_manager import SessionManager
-from .structure_exit_planner import StructureExitPlanner
 
 logger = logging.getLogger(__name__)
 
@@ -47,9 +46,13 @@ class TradingPipeline:
         # ---- PR3: Risk config + broker meta used by sizer ----
         self.risk_cfg = dict((self.config.system_configs or {}).get("risk", {}) or {})
         # sensible defaults so dry-run never crashes
-        self.risk_cfg.setdefault("per_trade_pct", 0.25)                 # % of equity
-        self.risk_cfg.setdefault("per_symbol_open_risk_cap_pct", 0.75)  # % of equity
+        self.risk_cfg.setdefault("per_trade_pct", 0.25)                # % of equity
+        self.risk_cfg.setdefault("per_symbol_open_risk_cap_pct", 0.75) # % of equity
         self.default_equity = float((self.config.system_configs or {}).get("equity", 10000.0))
+        self.allow_meta_fallbacks = bool((self.config.system_configs or {}).get("allow_broker_meta_fallbacks", False))
+
+        if self.allow_meta_fallbacks:
+            logger.warning("allowing_broker_meta_fallbacks")
 
         self.broker_symbols = {}
         try:
@@ -64,12 +67,15 @@ class TradingPipeline:
             logger.exception("broker_meta_init_failed", extra={"error": str(e)})
             self.broker_symbols = {}
 
-        # Initialize exit planner (structure-first; optional via config)
+        # Initialize exit planner (structure-first; optional via dynamic import)
         try:
+            import importlib
             sltp_path = os.path.join(base_dir, "configs", "sltp.json")
             with open(sltp_path, "r", encoding="utf-8") as f:
                 sltp_cfg = json.load(f)
-            self.exit_planner = StructureExitPlanner(sltp_cfg, self.broker_symbols)
+            planner_mod = importlib.import_module("core.orchestration.structure_exit_planner")
+            PlannerCls = getattr(planner_mod, "StructureExitPlanner")
+            self.exit_planner = PlannerCls(sltp_cfg, self.broker_symbols)
         except Exception as e:
             logger.debug("exit_planner_init_failed", extra={"error": str(e)})
             self.exit_planner = None
