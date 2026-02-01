@@ -89,3 +89,5 @@ class StructureManager:
             logger.info(f"detector_summary {name} seen={stats['seen']} fired={stats['fired']}")
         
         return summary
+
+

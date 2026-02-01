@@ -1,0 +1,67 @@
+{
+  "symbols": {
+    "EURUSD": {
+      "initial_state": "promoted",
+      "execute_when_promoted": true,
+      "probation_min_sessions": 0,
+      "probation_min_trades": 0,
+      "max_validation_errors": 0,
+      "min_rr_during_probation": 2.0,
+      "risk_cap_multiplier_during_probation": 1.0
+    },
+    "XAUUSD": {
+      "initial_state": "promoted",
+      "execute_when_promoted": true,
+      "probation_min_sessions": 0,
+      "probation_min_trades": 0,
+      "max_validation_errors": 0,
+      "min_rr_during_probation": 2.0,
+      "risk_cap_multiplier_during_probation": 1.0
+    },
+    "AUDUSD": {
+      "initial_state": "observe_only",
+      "execute_when_promoted": true,
+      "probation_min_sessions": 0,
+      "probation_min_trades": 15,
+      "max_validation_errors": 0,
+      "min_rr_during_probation": 2.0,
+      "risk_cap_multiplier_during_probation": 0.5
+    },
+    "AUDJPY": {
+      "initial_state": "observe_only",
+      "execute_when_promoted": true,
+      "probation_min_sessions": 0,
+      "probation_min_trades": 15,
+      "max_validation_errors": 0,
+      "min_rr_during_probation": 2.0,
+      "risk_cap_multiplier_during_probation": 0.5
+    },
+    "USDJPY": {
+      "initial_state": "observe_only",
+      "execute_when_promoted": true,
+      "probation_min_sessions": 0,
+      "probation_min_trades": 15,
+      "max_validation_errors": 0,
+      "min_rr_during_probation": 2.0,
+      "risk_cap_multiplier_during_probation": 0.5
+    },
+    "NVDA": {
+      "initial_state": "observe_only",
+      "execute_when_promoted": true,
+      "probation_min_sessions": 0,
+      "probation_min_trades": 20,
+      "max_validation_errors": 0,
+      "min_rr_during_probation": 2.0,
+      "risk_cap_multiplier_during_probation": 0.5
+    },
+    "TSLA": {
+      "initial_state": "observe_only",
+      "execute_when_promoted": true,
+      "probation_min_sessions": 0,
+      "probation_min_trades": 20,
+      "max_validation_errors": 0,
+      "min_rr_during_probation": 2.0,
+      "risk_cap_multiplier_during_probation": 0.5
+    }
+  }
+}

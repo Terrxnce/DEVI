@@ -1,0 +1,925 @@
+{
+  "date": "2026-01-13",
+  "generated_at": "2026-01-17T22:56:01.781854+00:00",
+  "summary": {
+    "today": {
+      "total_trades": 12,
+      "wins": 5,
+      "losses": 7,
+      "win_rate": 0.4166666666666667,
+      "total_pnl": -891.5200000000002,
+      "avg_winner": 791.8799999999999,
+      "avg_loser": 692.9885714285714,
+      "profit_factor": 0.8162163053606325,
+      "avg_rr": 0.03749999999999996,
+      "best_trade": 1254.33,
+      "worst_trade": -1166.4
+    },
+    "week": {
+      "total_trades": 56,
+      "wins": 29,
+      "losses": 27,
+      "win_rate": 0.5178571428571429,
+      "total_pnl": 4039.38,
+      "avg_winner": 615.2324137931035,
+      "avg_loser": 511.19851851851854,
+      "profit_factor": 1.2926586467821446,
+      "avg_rr": -0.3023214285714286,
+      "best_trade": 1254.33,
+      "worst_trade": -1166.4
+    }
+  },
+  "breakdowns": {
+    "today": {
+      "by_symbol": {
+        "AUDUSD": {
+          "total_trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "win_rate": 0.16666666666666666,
+          "total_pnl": -4564.88,
+          "avg_winner": 276.0,
+          "avg_loser": 968.176,
+          "profit_factor": 0.05701442712895176,
+          "avg_rr": -0.7083333333333334,
+          "best_trade": 276.0,
+          "worst_trade": -1166.4
+        },
+        "EURUSD": {
+          "total_trades": 4,
+          "wins": 4,
+          "losses": 0,
+          "win_rate": 1.0,
+          "total_pnl": 3683.3999999999996,
+          "avg_winner": 920.8499999999999,
+          "avg_loser": 0,
+          "profit_factor": Infinity,
+          "avg_rr": 1.8175,
+          "best_trade": 1254.33,
+          "worst_trade": 728.96
+        },
+        "AUDJPY": {
+          "total_trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "win_rate": 0.0,
+          "total_pnl": -10.040000000000001,
+          "avg_winner": 0,
+          "avg_loser": 5.0200000000000005,
+          "profit_factor": 0.0,
+          "avg_rr": -1.2850000000000001,
+          "best_trade": -3.89,
+          "worst_trade": -6.15
+        }
+      },
+      "by_structure": {
+        "engulfing": {
+          "total_trades": 5,
+          "wins": 4,
+          "losses": 1,
+          "win_rate": 0.8,
+          "total_pnl": 2638.2,
+          "avg_winner": 920.8499999999999,
+          "avg_loser": 1045.2,
+          "profit_factor": 3.5241102181400685,
+          "avg_rr": 1.2399999999999998,
+          "best_trade": 1254.33,
+          "worst_trade": -1045.2
+        },
+        "rejection": {
+          "total_trades": 7,
+          "wins": 1,
+          "losses": 6,
+          "win_rate": 0.14285714285714285,
+          "total_pnl": -3529.7200000000003,
+          "avg_winner": 276.0,
+          "avg_loser": 634.2866666666667,
+          "profit_factor": 0.07252241363000957,
+          "avg_rr": -0.8214285714285714,
+          "best_trade": 276.0,
+          "worst_trade": -1166.4
+        }
+      },
+      "by_session": {
+        "NY": {
+          "total_trades": 5,
+          "wins": 3,
+          "losses": 2,
+          "win_rate": 0.6,
+          "total_pnl": -9.8900000000001,
+          "avg_winner": 658.7033333333333,
+          "avg_loser": 993.0,
+          "profit_factor": 0.9950201409869083,
+          "avg_rr": 0.618,
+          "best_trade": 962.56,
+          "worst_trade": -1045.2
+        },
+        "London": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -1166.4,
+          "avg_winner": 0,
+          "avg_loser": 1166.4,
+          "profit_factor": 0.0,
+          "avg_rr": -1.55,
+          "best_trade": -1166.4,
+          "worst_trade": -1166.4
+        },
+        "London_NY": {
+          "total_trades": 4,
+          "wins": 2,
+          "losses": 2,
+          "win_rate": 0.5,
+          "total_pnl": 1022.26,
+          "avg_winner": 991.645,
+          "avg_loser": 480.515,
+          "profit_factor": 2.06371289137696,
+          "avg_rr": 0.25749999999999995,
+          "best_trade": 1254.33,
+          "worst_trade": -954.88
+        },
+        "Asia": {
+          "total_trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "win_rate": 0.0,
+          "total_pnl": -737.49,
+          "avg_winner": 0,
+          "avg_loser": 368.745,
+          "profit_factor": 0.0,
+          "avg_rr": -1.06,
+          "best_trade": -3.89,
+          "worst_trade": -733.6
+        }
+      },
+      "by_symbol_session": {
+        "AUDUSD_NY": {
+          "total_trades": 3,
+          "wins": 1,
+          "losses": 2,
+          "win_rate": 0.3333333333333333,
+          "total_pnl": -1710.0,
+          "avg_winner": 276.0,
+          "avg_loser": 993.0,
+          "profit_factor": 0.13897280966767372,
+          "avg_rr": -0.20000000000000004,
+          "best_trade": 276.0,
+          "worst_trade": -1045.2
+        },
+        "EURUSD_NY": {
+          "total_trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "win_rate": 1.0,
+          "total_pnl": 1700.11,
+          "avg_winner": 850.055,
+          "avg_loser": 0,
+          "profit_factor": Infinity,
+          "avg_rr": 1.845,
+          "best_trade": 962.56,
+          "worst_trade": 737.55
+        },
+        "AUDUSD_London": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -1166.4,
+          "avg_winner": 0,
+          "avg_loser": 1166.4,
+          "profit_factor": 0.0,
+          "avg_rr": -1.55,
+          "best_trade": -1166.4,
+          "worst_trade": -1166.4
+        },
+        "AUDJPY_London_NY": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -6.15,
+          "avg_winner": 0,
+          "avg_loser": 6.15,
+          "profit_factor": 0.0,
+          "avg_rr": -1.52,
+          "best_trade": -6.15,
+          "worst_trade": -6.15
+        },
+        "AUDUSD_Asia": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -733.6,
+          "avg_winner": 0,
+          "avg_loser": 733.6,
+          "profit_factor": 0.0,
+          "avg_rr": -1.07,
+          "best_trade": -733.6,
+          "worst_trade": -733.6
+        },
+        "AUDUSD_London_NY": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -954.88,
+          "avg_winner": 0,
+          "avg_loser": 954.88,
+          "profit_factor": 0.0,
+          "avg_rr": -1.03,
+          "best_trade": -954.88,
+          "worst_trade": -954.88
+        },
+        "AUDJPY_Asia": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -3.89,
+          "avg_winner": 0,
+          "avg_loser": 3.89,
+          "profit_factor": 0.0,
+          "avg_rr": -1.05,
+          "best_trade": -3.89,
+          "worst_trade": -3.89
+        },
+        "EURUSD_London_NY": {
+          "total_trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "win_rate": 1.0,
+          "total_pnl": 1983.29,
+          "avg_winner": 991.645,
+          "avg_loser": 0,
+          "profit_factor": Infinity,
+          "avg_rr": 1.79,
+          "best_trade": 1254.33,
+          "worst_trade": 728.96
+        }
+      },
+      "by_symbol_structure": {
+        "AUDUSD_engulfing": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -1045.2,
+          "avg_winner": 0,
+          "avg_loser": 1045.2,
+          "profit_factor": 0.0,
+          "avg_rr": -1.07,
+          "best_trade": -1045.2,
+          "worst_trade": -1045.2
+        },
+        "AUDUSD_rejection": {
+          "total_trades": 5,
+          "wins": 1,
+          "losses": 4,
+          "win_rate": 0.2,
+          "total_pnl": -3519.6800000000003,
+          "avg_winner": 276.0,
+          "avg_loser": 948.9200000000001,
+          "profit_factor": 0.07271424356110104,
+          "avg_rr": -0.636,
+          "best_trade": 276.0,
+          "worst_trade": -1166.4
+        },
+        "EURUSD_engulfing": {
+          "total_trades": 4,
+          "wins": 4,
+          "losses": 0,
+          "win_rate": 1.0,
+          "total_pnl": 3683.3999999999996,
+          "avg_winner": 920.8499999999999,
+          "avg_loser": 0,
+          "profit_factor": Infinity,
+          "avg_rr": 1.8175,
+          "best_trade": 1254.33,
+          "worst_trade": 728.96
+        },
+        "AUDJPY_rejection": {
+          "total_trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "win_rate": 0.0,
+          "total_pnl": -10.040000000000001,
+          "avg_winner": 0,
+          "avg_loser": 5.0200000000000005,
+          "profit_factor": 0.0,
+          "avg_rr": -1.2850000000000001,
+          "best_trade": -3.89,
+          "worst_trade": -6.15
+        }
+      }
+    },
+    "week": {
+      "by_symbol": {
+        "AUDUSD": {
+          "total_trades": 24,
+          "wins": 12,
+          "losses": 12,
+          "win_rate": 0.5,
+          "total_pnl": -544.6099999999997,
+          "avg_winner": 723.4283333333333,
+          "avg_loser": 768.8125,
+          "profit_factor": 0.9409684849470232,
+          "avg_rr": 0.2925,
+          "best_trade": 1072.89,
+          "worst_trade": -1166.4
+        },
+        "EURUSD": {
+          "total_trades": 18,
+          "wins": 11,
+          "losses": 7,
+          "win_rate": 0.6111111111111112,
+          "total_pnl": 4625.96,
+          "avg_winner": 830.700909090909,
+          "avg_loser": 644.5357142857143,
+          "profit_factor": 2.0253139025876874,
+          "avg_rr": 0.7027777777777778,
+          "best_trade": 1254.33,
+          "worst_trade": -803.44
+        },
+        "AUDJPY": {
+          "total_trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "win_rate": 0.375,
+          "total_pnl": -19.5,
+          "avg_winner": 2.52,
+          "avg_loser": 5.412000000000001,
+          "profit_factor": 0.2793791574279379,
+          "avg_rr": -0.14,
+          "best_trade": 3.27,
+          "worst_trade": -7.4
+        },
+        "USDJPY": {
+          "total_trades": 6,
+          "wins": 3,
+          "losses": 3,
+          "win_rate": 0.5,
+          "total_pnl": -22.470000000000002,
+          "avg_winner": 5.109999999999999,
+          "avg_loser": 12.600000000000001,
+          "profit_factor": 0.40555555555555545,
+          "avg_rr": -5.913333333333333,
+          "best_trade": 7.27,
+          "worst_trade": -20.23
+        }
+      },
+      "by_structure": {
+        "engulfing": {
+          "total_trades": 14,
+          "wins": 9,
+          "losses": 5,
+          "win_rate": 0.6428571428571429,
+          "total_pnl": 2329.2799999999997,
+          "avg_winner": 567.3788888888889,
+          "avg_loser": 555.426,
+          "profit_factor": 1.8387363933269236,
+          "avg_rr": -0.19714285714285715,
+          "best_trade": 1254.33,
+          "worst_trade": -1045.2
+        },
+        "rejection": {
+          "total_trades": 35,
+          "wins": 16,
+          "losses": 19,
+          "win_rate": 0.45714285714285713,
+          "total_pnl": 221.61000000000033,
+          "avg_winner": 625.67625,
+          "avg_loser": 515.2215789473685,
+          "profit_factor": 1.022638190415774,
+          "avg_rr": 0.18257142857142855,
+          "best_trade": 1150.38,
+          "worst_trade": -1166.4
+        },
+        "order_block": {
+          "total_trades": 6,
+          "wins": 4,
+          "losses": 2,
+          "win_rate": 0.6666666666666666,
+          "total_pnl": 1503.8799999999999,
+          "avg_winner": 681.1274999999999,
+          "avg_loser": 610.315,
+          "profit_factor": 2.2320523008610302,
+          "avg_rr": 0.7399999999999999,
+          "best_trade": 1024.32,
+          "worst_trade": -685.58
+        },
+        "sweep": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -15.39,
+          "avg_winner": 0,
+          "avg_loser": 15.39,
+          "profit_factor": 0.0,
+          "avg_rr": -25.0,
+          "best_trade": -15.39,
+          "worst_trade": -15.39
+        }
+      },
+      "by_session": {
+        "NY": {
+          "total_trades": 13,
+          "wins": 5,
+          "losses": 8,
+          "win_rate": 0.38461538461538464,
+          "total_pnl": 715.29,
+          "avg_winner": 749.274,
+          "avg_loser": 378.885,
+          "profit_factor": 1.2359851933964132,
+          "avg_rr": -1.0046153846153847,
+          "best_trade": 1024.32,
+          "worst_trade": -1045.2
+        },
+        "London": {
+          "total_trades": 12,
+          "wins": 5,
+          "losses": 7,
+          "win_rate": 0.4166666666666667,
+          "total_pnl": -389.6700000000001,
+          "avg_winner": 682.928,
+          "avg_loser": 543.4728571428572,
+          "profit_factor": 0.8975714387103049,
+          "avg_rr": -1.8008333333333333,
+          "best_trade": 867.28,
+          "worst_trade": -1166.4
+        },
+        "London_NY": {
+          "total_trades": 11,
+          "wins": 7,
+          "losses": 4,
+          "win_rate": 0.6363636363636364,
+          "total_pnl": 3185.02,
+          "avg_winner": 748.99,
+          "avg_loser": 514.4775,
+          "profit_factor": 2.547696449310223,
+          "avg_rr": 0.6136363636363636,
+          "best_trade": 1254.33,
+          "worst_trade": -954.88
+        },
+        "Asia": {
+          "total_trades": 18,
+          "wins": 10,
+          "losses": 8,
+          "win_rate": 0.5555555555555556,
+          "total_pnl": -786.9499999999999,
+          "avg_winner": 412.21100000000007,
+          "avg_loser": 613.6325,
+          "profit_factor": 0.8396943610385695,
+          "avg_rr": 0.4094444444444444,
+          "best_trade": 1072.89,
+          "worst_trade": -896.88
+        },
+        "Off_Hours": {
+          "total_trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "win_rate": 1.0,
+          "total_pnl": 1315.69,
+          "avg_winner": 657.845,
+          "avg_loser": 0,
+          "profit_factor": Infinity,
+          "avg_rr": 1.81,
+          "best_trade": 664.44,
+          "worst_trade": 651.25
+        }
+      },
+      "by_symbol_session": {
+        "AUDUSD_NY": {
+          "total_trades": 6,
+          "wins": 2,
+          "losses": 4,
+          "win_rate": 0.3333333333333333,
+          "total_pnl": -1971.8899999999999,
+          "avg_winner": 510.97,
+          "avg_loser": 748.4575,
+          "profit_factor": 0.34134870717442206,
+          "avg_rr": -0.19166666666666668,
+          "best_trade": 745.94,
+          "worst_trade": -1045.2
+        },
+        "EURUSD_NY": {
+          "total_trades": 3,
+          "wins": 3,
+          "losses": 0,
+          "win_rate": 1.0,
+          "total_pnl": 2724.43,
+          "avg_winner": 908.1433333333333,
+          "avg_loser": 0,
+          "profit_factor": Infinity,
+          "avg_rr": 1.7333333333333334,
+          "best_trade": 1024.32,
+          "worst_trade": 737.55
+        },
+        "AUDUSD_London": {
+          "total_trades": 6,
+          "wins": 3,
+          "losses": 3,
+          "win_rate": 0.5,
+          "total_pnl": -571.3000000000001,
+          "avg_winner": 718.9066666666668,
+          "avg_loser": 909.34,
+          "profit_factor": 0.7905807142176378,
+          "avg_rr": 0.38999999999999996,
+          "best_trade": 867.28,
+          "worst_trade": -1166.4
+        },
+        "AUDJPY_London_NY": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -6.15,
+          "avg_winner": 0,
+          "avg_loser": 6.15,
+          "profit_factor": 0.0,
+          "avg_rr": -1.52,
+          "best_trade": -6.15,
+          "worst_trade": -6.15
+        },
+        "AUDUSD_Asia": {
+          "total_trades": 7,
+          "wins": 4,
+          "losses": 3,
+          "win_rate": 0.5714285714285714,
+          "total_pnl": 1143.1100000000001,
+          "avg_winner": 849.6725,
+          "avg_loser": 751.86,
+          "profit_factor": 1.5067920446182357,
+          "avg_rr": 0.49714285714285705,
+          "best_trade": 1072.89,
+          "worst_trade": -896.88
+        },
+        "AUDUSD_London_NY": {
+          "total_trades": 5,
+          "wins": 3,
+          "losses": 2,
+          "win_rate": 0.6,
+          "total_pnl": 855.47,
+          "avg_winner": 701.2633333333333,
+          "avg_loser": 624.16,
+          "profit_factor": 1.6852970392207127,
+          "avg_rr": 0.4699999999999999,
+          "best_trade": 964.24,
+          "worst_trade": -954.88
+        },
+        "AUDJPY_Asia": {
+          "total_trades": 4,
+          "wins": 3,
+          "losses": 1,
+          "win_rate": 0.75,
+          "total_pnl": 3.67,
+          "avg_winner": 2.52,
+          "avg_loser": 3.89,
+          "profit_factor": 1.943444730077121,
+          "avg_rr": 0.8775,
+          "best_trade": 3.27,
+          "worst_trade": -3.89
+        },
+        "EURUSD_London_NY": {
+          "total_trades": 4,
+          "wins": 3,
+          "losses": 1,
+          "win_rate": 0.75,
+          "total_pnl": 2330.23,
+          "avg_winner": 1044.5566666666666,
+          "avg_loser": 803.44,
+          "profit_factor": 3.9003161405954394,
+          "avg_rr": 1.1,
+          "best_trade": 1254.33,
+          "worst_trade": -803.44
+        },
+        "EURUSD_Asia": {
+          "total_trades": 5,
+          "wins": 1,
+          "losses": 4,
+          "win_rate": 0.2,
+          "total_pnl": -1943.5900000000001,
+          "avg_winner": 706.0,
+          "avg_loser": 662.3975,
+          "profit_factor": 0.2664563196570035,
+          "avg_rr": -0.524,
+          "best_trade": 706.0,
+          "worst_trade": -721.63
+        },
+        "EURUSD_London": {
+          "total_trades": 4,
+          "wins": 2,
+          "losses": 2,
+          "win_rate": 0.5,
+          "total_pnl": 199.2,
+          "avg_winner": 628.96,
+          "avg_loser": 529.36,
+          "profit_factor": 1.1881517303914162,
+          "avg_rr": 0.5125,
+          "best_trade": 845.46,
+          "worst_trade": -546.12
+        },
+        "AUDJPY_NY": {
+          "total_trades": 3,
+          "wins": 0,
+          "losses": 3,
+          "win_rate": 0.0,
+          "total_pnl": -17.02,
+          "avg_winner": 0,
+          "avg_loser": 5.673333333333333,
+          "profit_factor": 0.0,
+          "avg_rr": -1.0366666666666668,
+          "best_trade": -2.9,
+          "worst_trade": -7.4
+        },
+        "USDJPY_Asia": {
+          "total_trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "win_rate": 1.0,
+          "total_pnl": 9.86,
+          "avg_winner": 4.93,
+          "avg_loser": 0,
+          "profit_factor": Infinity,
+          "avg_rr": 1.5,
+          "best_trade": 7.27,
+          "worst_trade": 2.59
+        },
+        "EURUSD_Off_Hours": {
+          "total_trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "win_rate": 1.0,
+          "total_pnl": 1315.69,
+          "avg_winner": 657.845,
+          "avg_loser": 0,
+          "profit_factor": Infinity,
+          "avg_rr": 1.81,
+          "best_trade": 664.44,
+          "worst_trade": 651.25
+        },
+        "USDJPY_London": {
+          "total_trades": 2,
+          "wins": 0,
+          "losses": 2,
+          "win_rate": 0.0,
+          "total_pnl": -17.57,
+          "avg_winner": 0,
+          "avg_loser": 8.785,
+          "profit_factor": 0.0,
+          "avg_rr": -13.0,
+          "best_trade": -2.18,
+          "worst_trade": -15.39
+        },
+        "USDJPY_London_NY": {
+          "total_trades": 1,
+          "wins": 1,
+          "losses": 0,
+          "win_rate": 1.0,
+          "total_pnl": 5.47,
+          "avg_winner": 5.47,
+          "avg_loser": 0,
+          "profit_factor": Infinity,
+          "avg_rr": 1.52,
+          "best_trade": 5.47,
+          "worst_trade": 5.47
+        },
+        "USDJPY_NY": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -20.23,
+          "avg_winner": 0,
+          "avg_loser": 20.23,
+          "profit_factor": 0.0,
+          "avg_rr": -14.0,
+          "best_trade": -20.23,
+          "worst_trade": -20.23
+        }
+      },
+      "by_symbol_structure": {
+        "AUDUSD_engulfing": {
+          "total_trades": 4,
+          "wins": 1,
+          "losses": 3,
+          "win_rate": 0.25,
+          "total_pnl": -1397.1399999999999,
+          "avg_winner": 745.94,
+          "avg_loser": 714.36,
+          "profit_factor": 0.3480691341433825,
+          "avg_rr": -0.405,
+          "best_trade": 745.94,
+          "worst_trade": -1045.2
+        },
+        "AUDUSD_rejection": {
+          "total_trades": 18,
+          "wins": 10,
+          "losses": 8,
+          "win_rate": 0.5555555555555556,
+          "total_pnl": 751.1000000000001,
+          "avg_winner": 729.8720000000001,
+          "avg_loser": 818.4525,
+          "profit_factor": 1.1147134378598635,
+          "avg_rr": 0.42666666666666664,
+          "best_trade": 1072.89,
+          "worst_trade": -1166.4
+        },
+        "EURUSD_engulfing": {
+          "total_trades": 6,
+          "wins": 5,
+          "losses": 1,
+          "win_rate": 0.8333333333333334,
+          "total_pnl": 3734.02,
+          "avg_winner": 869.568,
+          "avg_loser": 613.82,
+          "profit_factor": 7.083249160991821,
+          "avg_rr": 1.3916666666666666,
+          "best_trade": 1254.33,
+          "worst_trade": -613.82
+        },
+        "AUDJPY_rejection": {
+          "total_trades": 6,
+          "wins": 1,
+          "losses": 5,
+          "win_rate": 0.16666666666666666,
+          "total_pnl": -24.86,
+          "avg_winner": 2.2,
+          "avg_loser": 5.412000000000001,
+          "profit_factor": 0.08130081300813008,
+          "avg_rr": -0.6883333333333334,
+          "best_trade": 2.2,
+          "worst_trade": -7.4
+        },
+        "EURUSD_order_block": {
+          "total_trades": 4,
+          "wins": 3,
+          "losses": 1,
+          "win_rate": 0.75,
+          "total_pnl": 1402.4499999999998,
+          "avg_winner": 696.0099999999999,
+          "avg_loser": 685.58,
+          "profit_factor": 3.045640187870124,
+          "avg_rr": 0.87,
+          "best_trade": 1024.32,
+          "worst_trade": -685.58
+        },
+        "EURUSD_rejection": {
+          "total_trades": 8,
+          "wins": 3,
+          "losses": 5,
+          "win_rate": 0.375,
+          "total_pnl": -510.5099999999999,
+          "avg_winner": 900.6133333333333,
+          "avg_loser": 642.47,
+          "profit_factor": 0.8410789608853332,
+          "avg_rr": 0.10250000000000001,
+          "best_trade": 1150.38,
+          "worst_trade": -803.44
+        },
+        "USDJPY_rejection": {
+          "total_trades": 3,
+          "wins": 2,
+          "losses": 1,
+          "win_rate": 0.6666666666666666,
+          "total_pnl": 5.879999999999999,
+          "avg_winner": 4.029999999999999,
+          "avg_loser": 2.18,
+          "profit_factor": 3.6972477064220173,
+          "avg_rr": 0.6733333333333333,
+          "best_trade": 5.47,
+          "worst_trade": -2.18
+        },
+        "AUDJPY_engulfing": {
+          "total_trades": 2,
+          "wins": 2,
+          "losses": 0,
+          "win_rate": 1.0,
+          "total_pnl": 5.359999999999999,
+          "avg_winner": 2.6799999999999997,
+          "avg_loser": 0,
+          "profit_factor": Infinity,
+          "avg_rr": 1.505,
+          "best_trade": 3.27,
+          "worst_trade": 2.09
+        },
+        "AUDUSD_order_block": {
+          "total_trades": 2,
+          "wins": 1,
+          "losses": 1,
+          "win_rate": 0.5,
+          "total_pnl": 101.43000000000006,
+          "avg_winner": 636.48,
+          "avg_loser": 535.05,
+          "profit_factor": 1.1895710681244744,
+          "avg_rr": 0.48,
+          "best_trade": 636.48,
+          "worst_trade": -535.05
+        },
+        "USDJPY_engulfing": {
+          "total_trades": 2,
+          "wins": 1,
+          "losses": 1,
+          "win_rate": 0.5,
+          "total_pnl": -12.96,
+          "avg_winner": 7.27,
+          "avg_loser": 20.23,
+          "profit_factor": 0.3593672763222936,
+          "avg_rr": -6.25,
+          "best_trade": 7.27,
+          "worst_trade": -20.23
+        },
+        "USDJPY_sweep": {
+          "total_trades": 1,
+          "wins": 0,
+          "losses": 1,
+          "win_rate": 0.0,
+          "total_pnl": -15.39,
+          "avg_winner": 0,
+          "avg_loser": 15.39,
+          "profit_factor": 0.0,
+          "avg_rr": -25.0,
+          "best_trade": -15.39,
+          "worst_trade": -15.39
+        }
+      }
+    }
+  },
+  "patterns": [
+    {
+      "type": "time_cluster",
+      "text": "3 losses clustered around 16:00 UTC"
+    },
+    {
+      "type": "time_cluster",
+      "text": "4 losses clustered around 04:00 UTC"
+    },
+    {
+      "type": "time_cluster",
+      "text": "3 losses clustered around 18:00 UTC"
+    },
+    {
+      "type": "time_cluster",
+      "text": "3 losses clustered around 12:00 UTC"
+    }
+  ],
+  "ai_analysis": {
+    "summary": "Overall performance is negative with a win rate of 42%. The AUDUSD trade has a significant loss and low win rate, while EURUSD has a perfect win rate but lower profitability.",
+    "insights": [
+      {
+        "text": "AUDUSD and AUDJPY are underperforming, while EURUSD is performing well but with limited profitability."
+      }
+    ],
+    "recommendations": [
+      {
+        "action": "adjust_threshold",
+        "scope": {
+          "symbol": "AUDUSD",
+          "session": "1W",
+          "structure": "engulfing"
+        },
+        "change": {
+          "threshold_delta": 0.05
+        },
+        "why": "To improve the win rate and potentially reduce losses.",
+        "evidence": {
+          "n": 4,
+          "win_rate": 0.25,
+          "pnl": -1166
+        },
+        "confidence": "low",
+        "reversal_condition": "When the win rate improves to 50% or above.",
+        "_guardrail_applied": "confidence lowered due to small sample (n=4)",
+        "auto_applicable": false
+      },
+      {
+        "action": "monitor",
+        "scope": {
+          "symbol": "EURUSD",
+          "session": "4W",
+          "structure": "engulfing"
+        },
+        "change": {},
+        "why": "Performing well with a perfect win rate but limited profitability. Monitor for potential adjustments.",
+        "evidence": {
+          "n": 1,
+          "win_rate": 1,
+          "pnl": 3683
+        },
+        "confidence": "low",
+        "reversal_condition": "When the profitability increases significantly.",
+        "_guardrail_applied": "confidence lowered due to small sample (n=1)",
+        "auto_applicable": false
+      }
+    ],
+    "warnings": [
+      {
+        "severity": "high",
+        "text": "The AUDJPY trade has a 0% win rate and should be closely monitored or potentially disabled."
+      }
+    ]
+  }
+}

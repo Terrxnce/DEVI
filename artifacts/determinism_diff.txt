@@ -1,0 +1,4 @@
+Determinism check (100 bars x2)
+Run1 decisions: 100
+Run2 decisions: 100
+Result: IDENTICAL (decision types/structures match)

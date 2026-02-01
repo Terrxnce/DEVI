@@ -40,6 +40,8 @@
       "volume_confirmation": false
     },
     "sweep": {
+      "enabled": false,
+      "disabled_reason": "Disabled Jan 15 2026: 0% WR, fundamentally broken detection logic, config params ignored, invalid SL placement. Needs full rebuild before re-enabling.",
       "sweep_excess_atr": 0.08,
       "close_back_inside_within": 2,
       "min_follow_through_atr": 0.15,

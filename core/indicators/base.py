@@ -18,3 +18,5 @@ class IndicatorValue:
     def __post_init__(self):
         if self.metadata is None:
             object.__setattr__(self, 'metadata', {})
+
+

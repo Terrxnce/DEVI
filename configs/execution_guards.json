@@ -1,0 +1,97 @@
+{
+  "broker_stop_level_guard": {
+    "enabled": true,
+    "spread_buffer_multiplier": 2.0,
+    "min_stops_level_when_zero": 10,
+    "use_tick_based_stop_validation": true,
+    "tick_spread_multiplier": 3.0,
+    "tick_spread_buffer_points": 20.0,
+    "default_symbol_floor_points": 50,
+    "symbol_floor_points": {
+      "EURUSD": 50,
+      "GBPUSD": 50,
+      "USDJPY": 50,
+      "XAUUSD": 800
+    },
+    "log_rejections": true,
+    "comment": "RE-ENABLED with corrected symbol-specific minimums derived from Phase 2B ground truth data (Dec 12 2025)"
+  },
+  "invalid_stops_handling": {
+    "enable_adaptive_retry_on_10016": true,
+    "retry_tick_spread_multiplier": 4.0,
+    "retry_tick_spread_buffer_points": 30.0,
+    "retry_safety_margin_points": 20.0,
+    "enable_naked_entry_fallback_on_10016": false,
+    "close_on_modify_failure": false
+  },
+  "margin_guard": {
+    "enabled": true,
+    "min_margin_level_pct": 200.0,
+    "max_free_margin_usage_pct": 30.0,
+    "max_total_open_risk_pct": 4.5,
+    "log_blocked_trades": true
+  },
+  "position_tracking": {
+    "enabled": true,
+    "check_interval_seconds": 10,
+    "log_all_closes": true,
+    "track_close_reasons": true
+  },
+  "legacy_exit_fallback": {
+    "enabled": true,
+    "fallback_to_atr": true,
+    "reject_signal_if_no_fallback": false,
+    "log_fallback_reasons": true
+  },
+  "sl_tp_rescaling": {
+    "enabled": true,
+    "max_rescale_attempts": 3,
+    "exponential_widening_factors": [1.0, 1.2, 1.6, 2.4],
+    "maintain_risk_via_volume": true,
+    "log_each_attempt": true
+  },
+  "trade_journal": {
+    "enabled": true,
+    "journal_dir": null,
+    "comment": "Trade outcome tracking - logs entry/exit lifecycle for strategy analysis"
+  },
+  "position_limit": {
+    "enabled": true,
+    "max_positions_per_symbol": 2,
+    "max_positions_per_direction_per_symbol": 2,
+    "log_blocked_trades": true,
+    "comment": "Prevents position stacking - max 2 positions per symbol to avoid clustering losses"
+  },
+  "conflict_resolver": {
+    "enabled": true,
+    "lookback_bars": 4,
+    "threshold_bump_on_conflict": 0.15,
+    "require_confluence_on_conflict": false,
+    "log_conflicts": true,
+    "comment": "When BUY and SELL signals appear within lookback window, raises quality threshold"
+  },
+  "htf_bias": {
+    "enabled": true,
+    "timeframe": "H1",
+    "ema_period": 50,
+    "atr_period": 14,
+    "neutral_zone_atr_mult": 0.5,
+    "bias_bonus": 0.05,
+    "bias_penalty": 0.10,
+    "countertrend_override_score": 0.82,
+    "hard_block": "conditional",
+    "hard_block_clear_trend_mult": 1.5,
+    "lookback_bars": 100,
+    "log_bias_checks": true,
+    "comment": "HTF bias scoring - conditional hard block when price clearly outside neutral zone (1.5x ATR from EMA). Soft scoring otherwise."
+  },
+  "structure_thresholds": {
+    "break_of_structure": 0.90,
+    "engulfing": 0.75,
+    "order_block": 0.72,
+    "fair_value_gap": 0.75,
+    "rejection": 0.70,
+    "rejection_buy": 0.72,
+    "comment": "Per-structure confidence thresholds. Structures not listed use default 0.60. Rejection BUY lowered from 0.85 to 0.72 on Jan 30 2026 - was blocking 198 signals with avg conf 0.696, rejections that pass have 60% WR."
+  }
+}

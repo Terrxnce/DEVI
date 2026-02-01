@@ -4,9 +4,16 @@ from typing import Optional, Dict, Any, Tuple
 
 
 class StructureExitPlanner:
-    def __init__(self, cfg: Dict[str, Any], broker_meta: Dict[str, Any]):
+    def __init__(self, cfg: Dict[str, Any], broker_meta: Dict[str, Any], guards_config: Dict[str, Any] = None):
         self.cfg = cfg.get("sltp_planning", cfg)
         self.broker = broker_meta or {}
+        self.guards_config = guards_config or {}
+        
+        # Legacy exit fallback configuration
+        legacy_cfg = self.guards_config.get('legacy_exit_fallback', {})
+        self.enable_legacy_fallback = legacy_cfg.get('enabled', True)
+        self.fallback_to_atr = legacy_cfg.get('fallback_to_atr', True)
+        self.reject_signal_if_no_fallback = legacy_cfg.get('reject_signal_if_no_fallback', False)
 
     def plan(
         self,
@@ -26,6 +33,11 @@ class StructureExitPlanner:
                 if planned:
                     return self._apply_rr_gate_and_return(planned, side, entry)
                 # If this structure type is unavailable or invalid, try next priority
+                continue
+            if method == "rejection":
+                planned = self._plan_from_rejection(side, entry, atr, structures)
+                if planned:
+                    return self._apply_rr_gate_and_return(planned, side, entry)
                 continue
             if method == "atr":
                 planned = self._plan_from_atr(side, entry, atr)
@@ -94,6 +106,10 @@ class StructureExitPlanner:
         elif side.upper() == "SELL" and tp >= entry:
             tp = entry - tp_ext
 
+        # Store pre-clamp values
+        sl_requested = sl
+        tp_requested = tp
+
         sl, tp, clamped = self._apply_broker_clamps(entry, sl, tp, side)
         if sl is None or tp is None:
             return None
@@ -104,6 +120,8 @@ class StructureExitPlanner:
             "method": method,
             "buffers_used": {"sl_buf": sl_buf, "tp_ext_atr": None},
             "clamped": clamped,
+            "sl_requested": sl_requested,
+            "tp_requested": tp_requested,
         }
 
     def _plan_from_atr(self, side: str, entry: Decimal, atr: Decimal) -> Optional[Dict[str, Any]]:
@@ -112,12 +130,12 @@ class StructureExitPlanner:
             return None
         tp_ext = Decimal(str(self.cfg.get("buffers", {}).get("tp_extension_atr", 1.0))) * atr
         if side.upper() == "BUY":
-            sl = entry - sl_buf
-            tp = entry + tp_ext
+            sl_requested = entry - sl_buf
+            tp_requested = entry + tp_ext
         else:
-            sl = entry + sl_buf
-            tp = entry - tp_ext
-        sl, tp, clamped = self._apply_broker_clamps(entry, sl, tp, side)
+            sl_requested = entry + sl_buf
+            tp_requested = entry - tp_ext
+        sl, tp, clamped = self._apply_broker_clamps(entry, sl_requested, tp_requested, side)
         if sl is None or tp is None:
             return None
         return {
@@ -126,6 +144,109 @@ class StructureExitPlanner:
             "method": "atr",
             "buffers_used": {"sl_buf": sl_buf, "tp_ext_atr": tp_ext},
             "clamped": clamped,
+            "sl_requested": sl_requested,
+            "tp_requested": tp_requested,
+        }
+
+    def _plan_from_rejection(
+        self, side: str, entry: Decimal, atr: Decimal, structures: Dict[str, Any]
+    ) -> Optional[Dict[str, Any]]:
+        """
+        Plan SL/TP based on rejection (UZR) structure.
+        SL is placed beyond the rejection zone boundary.
+        TP uses ATR-based extension.
+        """
+        import logging
+        logger = logging.getLogger(__name__)
+        
+        rejection_data = structures.get("rejection")
+        if not rejection_data:
+            if self.enable_legacy_fallback:
+                logger.warning("exit_planner_rejection_unavailable", extra={
+                    "reason": "no_rejection_data_in_structures",
+                    "side": side,
+                    "entry": float(entry)
+                })
+            return None
+        
+        nearest = rejection_data.get("nearest")
+        if not nearest:
+            if self.enable_legacy_fallback:
+                logger.warning("exit_planner_rejection_unavailable", extra={
+                    "reason": "no_nearest_rejection_zone",
+                    "side": side,
+                    "entry": float(entry)
+                })
+            return None
+        
+        # Get rejection zone boundaries
+        try:
+            zone_low = Decimal(str(nearest.get("zone_low")))
+            zone_high = Decimal(str(nearest.get("zone_high")))
+        except Exception as e:
+            if self.enable_legacy_fallback:
+                logger.warning("exit_planner_rejection_invalid", extra={
+                    "reason": "zone_boundaries_invalid",
+                    "side": side,
+                    "entry": float(entry),
+                    "error": str(e)
+                })
+            return None
+        
+        # Validate zone is on correct side of entry
+        if side.upper() == "BUY" and entry < zone_low:
+            if self.enable_legacy_fallback:
+                logger.warning("exit_planner_rejection_wrong_side", extra={
+                    "reason": "buy_entry_below_rejection_zone",
+                    "side": side,
+                    "entry": float(entry),
+                    "zone_low": float(zone_low),
+                    "zone_high": float(zone_high)
+                })
+            return None
+        
+        if side.upper() == "SELL" and entry > zone_high:
+            if self.enable_legacy_fallback:
+                logger.warning("exit_planner_rejection_wrong_side", extra={
+                    "reason": "sell_entry_above_rejection_zone",
+                    "side": side,
+                    "entry": float(entry),
+                    "zone_low": float(zone_low),
+                    "zone_high": float(zone_high)
+                })
+            return None
+        
+        # Compute SL buffer
+        sl_buf = self._compute_sl_buffer(atr)
+        if sl_buf is None:
+            return None
+        
+        # Compute TP extension
+        tp_ext = Decimal(str(self.cfg.get("buffers", {}).get("tp_extension_atr", 1.0))) * atr
+        
+        # Place SL beyond rejection zone, TP using ATR extension
+        if side.upper() == "BUY":
+            # For BUY, rejection zone is support, SL below it
+            sl_requested = zone_low - sl_buf
+            tp_requested = entry + tp_ext
+        else:
+            # For SELL, rejection zone is resistance, SL above it
+            sl_requested = zone_high + sl_buf
+            tp_requested = entry - tp_ext
+        
+        # Apply broker clamps
+        sl, tp, clamped = self._apply_broker_clamps(entry, sl_requested, tp_requested, side)
+        if sl is None or tp is None:
+            return None
+        
+        return {
+            "sl": sl,
+            "tp": tp,
+            "method": "rejection",
+            "buffers_used": {"sl_buf": sl_buf, "tp_ext_atr": tp_ext},
+            "clamped": clamped,
+            "sl_requested": sl_requested,
+            "tp_requested": tp_requested,
         }
 
     def _apply_rr_gate_and_return(
@@ -178,17 +299,29 @@ class StructureExitPlanner:
                 # restore original tp if extension failed to meet constraints
                 planned["tp"] = tp_saved
             elif method == "atr":
-                # For ATR plans, allow pass-through when broker min_stop_distance is not too large vs ATR TP extension.
-                try:
-                    min_stop = Decimal(str(self.broker.get("min_stop_distance", "0")))
-                    tp_ext_atr = Decimal(str((planned.get("buffers_used") or {}).get("tp_ext_atr", 0)))
-                except Exception:
-                    min_stop = Decimal(0)
-                    tp_ext_atr = Decimal(0)
-                # Threshold: if broker min stop is >= 5x the ATR TP extension, reject; else accept despite rr < min_rr
-                if tp_ext_atr > 0 and min_stop < (Decimal(5) * tp_ext_atr):
-                    planned["expected_rr"] = rr
-                    return planned
+                # For ATR plans, extend TP to meet min_rr requirement
+                needed_reward = (min_rr * risk)
+                if side.upper() == "BUY":
+                    new_tp = entry + needed_reward
+                else:
+                    new_tp = entry - needed_reward
+                # Re-apply broker clamps
+                sl2, tp2, _ = self._apply_broker_clamps(entry, sl, new_tp, side)
+                if sl2 is not None and tp2 is not None:
+                    planned["sl"], planned["tp"] = sl2, tp2
+                    # Recompute RR
+                    if side.upper() == "BUY":
+                        risk2 = entry - sl2
+                        reward2 = tp2 - entry
+                    else:
+                        risk2 = sl2 - entry
+                        reward2 = entry - tp2
+                    if risk2 > 0 and reward2 > 0:
+                        rr2 = reward2 / risk2
+                        if rr2 >= min_rr:
+                            planned["expected_rr"] = rr2
+                            return planned
+                # If extension failed, reject the plan
                 return None
             return None
         planned["expected_rr"] = rr

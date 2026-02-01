@@ -9,6 +9,10 @@
     "cleanup_interval_minutes": 60,
     "data_source": "csv",
     "synthetic_mode": false,
+    "env": {
+      "mode": "ftmo_demo",
+      "account_size": 200000
+    },
     "data": {
       "source": "csv",
       "csv_path": "infra/data/eurusd_m15_clean.csv",
@@ -17,17 +21,30 @@
     },
     "execution": {
       "enabled": true,
-      "mode": "dry-run",
+      "mode": "live",
       "min_rr": 1.5,
       "price_side": {"BUY": "ASK", "SELL": "BID"},
-      "emergency_close": {"deviation": 20, "type_filling": "IOC", "max_retries": 3}
+      "emergency_close": {"deviation": 20, "type_filling": "IOC", "max_retries": 3},
+      "enable_real_mt5_orders": true,
+      "max_slippage_points": 5,
+      "deviation_points": 10,
+      "max_requotes": 1,
+      "sl_buffer_points": 10
     },
     "features": {
       "unified_zone_rejection": false
     },
     "risk": {
-      "per_trade_pct": 0.25,
-      "per_symbol_open_risk_cap_pct": 0.75
+      "per_trade_pct": 0.003,
+      "per_symbol_open_risk_cap_pct": 0.015,
+      "daily_soft_stop_pct": -100.0,
+      "daily_hard_stop_pct": -100.0,
+      "max_consecutive_send_failures": 3
+    },
+    "ftmo_limits": {
+      "max_daily_loss_pct": -5.0,
+      "max_total_loss_pct": -10.0,
+      "profit_target_pct": 10.0
     }
   },
   "pipeline_configs": {
@@ -60,3 +77,5 @@
     "checksum_algorithm": "sha256"
   }
 }
+
+
